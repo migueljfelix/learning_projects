@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button's Family</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Instruções -->
+    <!-- Queremos 3 tipos de botões - Normais | Pequenos | Outlines -->
+    <!-- Lembrem-se que, um botão, é um botão. -->
+    <!-- Lembrem-se que podemos agregar várias classes ao mesmo elemento de forma a atribuir 
+        características diferentes. -->
+    <!-- Lembrem-se que os botões, como outros elementos também teem estados :hover :active, etc. 
+        São acções que temos que ter em conta quando interagimos como o utilizador.
+    -->
+
+    <pre class="colors" style="width: 90%; text-align: center; margin: 0 auto;">
+        <p>Colors to use</p>
+        <div class="" style="width: 100%; display: flex; gap: 16px;justify-content: center;">
+            <span>#1652F0 - primary</span>
+            <span>#14cf3c - success</span>
+            <span>#cf1414 - danger</span>
+            <span>#dbac2b - warning</span>
+        </div>
+    </pre>
+    <div class="buttons__wrapper">
+        <div class="description">
+            Buttons 
+        </div>
+        <div class="d-flex"> 
+            <!-- normal buttons -->
+            <button class="btn btn-normal primary">Button</button>
+            <button class="btn btn-normal success">Button</button>
+            <button class="btn btn-normal danger">Button</button>
+            <button class="btn btn-normal warning">Button</button>
+           
+        </div>
+    </div>
+
+    <div class="buttons__wrapper">
+        <div class="description">
+            Buttons Small
+        </div>
+        <div class="d-flex"> 
+            <button class="btn btn-small primary">Button</button>
+            <button class="btn btn-small success">Button</button>
+            <button class="btn btn-small danger">Button</button>
+            <button class="btn btn-small warning">Button</button>
+            <!-- small buttons -->
+            <!--juntar a classe de trás: button, mas só o small! -->
+        </div>
+    </div>
+
+    <div class="buttons__wrapper">
+        <div class="description">
+            Buttons 
+        </div>
+        <div class="d-flex"> 
+            <!-- outlines -->
+            <button class="btn btn-outlines outlines-primary">Button</button>
+            <button class="btn btn-outlines outlines-success">Button</button>
+            <button class="btn btn-outlines outlines-danger">Button</button>
+            <button class="btn btn-outlines outlines-warning">Button</button>
+        </div>
+    </div>
+    
+</body>
+</html>

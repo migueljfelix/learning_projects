@@ -1,0 +1,179 @@
+section {
+    margin: 0 0 32px 0;
+}
+
+.sandbox {
+    width: 100%;
+    background-color: gainsboro;
+    height: 175px;
+    position: relative;
+}
+
+pre {
+    display: inline;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+
+
+.target {
+    width: 50px;
+    height: 50px;
+    border: 1px dashed gray;
+}
+
+
+
+.target-z-2 {
+    z-index: 2;
+}
+
+.target-1 {
+    margin: 0 auto;
+}
+
+
+.target-2 {
+    position: relative;
+    top: 50px;
+}
+
+.target-3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.target-4 {
+    width: 100px;
+    height: 80px;
+    background-color: blue;
+    position: relative;
+    margin: 0 auto;
+}
+
+.target-5-wrapper .target-5,
+.box-5-wrapper .box-5 {
+    display: inline-block;
+}
+
+.target-5-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.target-5 {
+    border-radius: 100%;
+}
+
+.box-text,
+.target-6 {
+    display: inline;
+}
+
+.target-text {
+    letter-spacing: 10px;
+    text-align: center;
+    opacity: .5;
+    font-size: 2rem;
+}
+
+.target-7-wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: min-content;
+}
+
+.target-fill {
+    width: 50px;
+    height: 50px;
+    background: gray;
+}
+
+.target-fill:nth-child(1) {
+    background-color: orange;
+}
+
+.target-z-1 {
+    z-index: 1;
+    position: absolute;
+    margin: 5px;
+
+}
+
+
+.box-1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    /* transform faz com que a o quandrado fique centrado pois o target é a ponta superior esquerda */
+    /* calc(50% - 20px (faz os left e o translate ao mesmo tempo)*/
+}
+
+.box-2{
+    position: absolute;
+    top: 51px;
+    left: 1px;
+}
+
+.box-3{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+
+.box-4{
+    position: absolute;
+    padding: 16px 25px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: blue;
+
+}
+
+ .box-5{
+     border-radius: 100%;
+     border-style: dashed;
+     right: 1px;
+    background-color: transparent;
+    border-color: gray;
+}
+
+.box-5-wrapper{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.target-text{
+    font-size: 16px;
+    letter-spacing: normal;
+    opacity: 100;
+}
+
+.box-7-wrapper{
+position: absolute;
+}
+
+.box-z-1{
+    height: 50px;
+}
+
+.box-z-2{
+    height: 50px;
+}
+
+.target-fill:nth-child(1) {
+    background-color: red;}
+
+  .target-fill:nth-child(1) {
+    background-color: red;  }
+
+    .target-fill{background: red;
+        height: 99px;}

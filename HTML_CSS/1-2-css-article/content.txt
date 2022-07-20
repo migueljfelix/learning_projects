@@ -1,0 +1,145 @@
+Title da Pagina: Article's Page
+Tipo de CSS : Externo.
+FONTE para utilizar: 
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+declaração => font-family: 'Vollkorn', serif;
+
+------------------------------------------------------------------------------------------------------------------------
+
+Links do Menu:    
+Home <= Este tem que estar activo.
+Our Story
+Membership
+Write
+
+Titulo: This Is How to Get Your Dream Job Quicker than You Think
+subtítulo: It’s child’s play when you break it into these simple steps.
+
+imagem : https://miro.medium.com/max/700/1*FR9hzez9Ib3MTih_R5Bd3Q.jpeg
+
+I hope to never work a job again.
+
+But I’ve spent most of my career in jobs. A decade of working in finance gave me an interesting
+perspective.
+
+I got to see many people get their version of a dream job. My curiosity would often go into hyperdrive,
+so I’d ask them how they did it. Eventually I used what I learned to get my dream job.
+Here’s what I learned about dreams jobs while chasing my own.
+
+The bizarre thing about a dream job
+
+My dream job was unexpected and isn’t what you’d think.
+
+I got a job working with two other guys. We became best friends. The work we did isn’t anything to tell
+your mother about. But the bonds we formed made it my dream job.
+I have fantasies about working a dream job like this again. Yet, I know it’s unlikely to ever happen
+once more.
+
+The autonomy of self-employment is too good to give up.
+
+Takeaway: The people you work with make a job a dream.
+
+Find the third door
+
+Many employees are delusional.
+
+They think they’ll find their dream job via a job ad aka the front door.
+
+Unlikely.
+
+Job postings are nothing more than ads. Many of them aren’t even real. They’re a way to collect email
+addresses. Lol. You could say job ads are a lead magnet. Don’t worry, I’m a sucker, I fell for it too.
+The second door is where you patiently warm your office seat each day waiting for an opportunity to come
+up. This is the career ladder p*rn HR sell to attract talent. Most of the time it’s a mirage.
+Dream jobs are found when you look for the third door.
+
+How?
+
+You have conversations. Instead of competing for jobs you become a connector of humans. Let me tell you
+how it happened to me.
+
+I got in a lift. A farmer got in at the same time. I struck up a conversation — not small talk. The next
+day I saw him again in the hallway. We spoke some more.
+
+I did this several times with zero self-interest.
+
+Eventually we got to know each other through work. He turned out to be a big shot that managed one of the
+largest tech companies in the world.
+
+He introduced me to everyone he knew. (These are people you can’t look up on LinkedIn.) One day a job
+came up. It was working with him.
+
+No job ad went up.
+
+[“Hey Timbo, you wanna come work for me mate?”] Italic.
+
+That’s it. I got to name the salary. I got to name the hours. I got to pick the office. I got to handpick
+the clients I wanted. I didn’t work based on the company rules. Our team had our own rules.
+Like I said, best job in the world. All from hallway conversations.
+
+Smash the third door down
+
+Another trick is to use LinkedIn — but not how dummies do.
+
+Spend time each day finding interesting people. Spark up conversations with them in DMs. Read what they
+say online before you reach out.
+
+If there’s a dream company you want to work for, then your LinkedIn account is how you get an unfair
+advantage.
+
+Find employees who already work for the brand (ideally mutual connections). If you have none then look up
+employees likely to be around the dream job you want. Start conversations with them.
+Once there’s a bit of rapport going don’t ask them for help.
+
+Tell them what your goal is.
+
+Sample line:
+HIGHLIGHT:[My goal is to work for Microsoft.] Obviously you work there. What have you seen people in my position do
+to get a job there? What did YOU do at the start to get an opportunity? Feel free not to share if you
+aren’t comfortable.
+This strategy will lead to warm intros. Some people may even be wild enough to give you a reference or
+introduce you to hiring managers.
+
+Dunning-Kruger effect is where incompetent dummies think they’re smart and better at a job than they
+actually are.
+
+Don’t be this person.
+
+Say “I don’t know once or twice.” It shows you’re willing to learn rather than showing up as a fake
+genius that’s frequently conquered Mount Stupid.
+
+Then tell them you’ll find the answer and get back to them via email.
+
+Thinking you’re the smartest person in the room is a disease. It kills many dream jobs silently.
+
+|| Send a follow up || com link para https://medium.com => (prémio para quem souber como se abre um link noutro separador. senão souberem gritem!)
+
+It’s your dream job we’re talking about.
+
+Don’t go through all that effort and then be a lazy ass and wait to hear back. ‘Proactive” is your middle
+name, remember?
+
+Follow up after the interview with a right hook to the face email.
+
+Example: “Even if I don’t get the job, I learned this one thing… It’s made the whole interview process
+worth it regardless of the outcome. Thanks again for the opportunity. Would be good to stay connected
+too.”
+
+Expect rejection
+
+It’s your dream job. It’s supposed to be hard. Don’t cry like a baby if you get rejected.
+
+Do this instead:
+- “Is there anything I can improve on?”
+- “How would I go about finding out about future opportunities so I can try again? 
+I’m persistent and this is a career goal of mine.”
+
+
+// Related Articles - Serão 3 iguais.
+Thumbnail: https://miro.medium.com/fit/c/112/112/1*ktVD8n-IgmDkDhGoBt8rxw.jpeg
+Título: Why I Stopped Calling Myself a “Freelance Writer”
+Content:The gift and the curse of an often-underestimated job title —  
+        Several years ago, the CEO of a prominent product development services company approached me 
+        to help out with copywriting and publicity. I had started my own editorial studio, Wonder Shuttle, 
+        and gave myself the job title of creative director. That didn’t matter much, because most of my 
+        network still knew…

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* font para utilizar  */
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+    display: flex;
+    position: relative;
+
+}
+
+.col1{
+width: 210px;
+position: sticky;
+top: 0;
+height: 100vh;
+}
+
+.nav_logo{
+    padding: 10px 10px;
+    color: red;
+    font-size: 1.30rem;
+    padding-left: 5px;
+    border-right: gray;
+   text-shadow: 0px 0px 10px red;
+}
+
+.col1_btn{
+    background-color: black;
+    width: 100%;
+    padding: 9px 9px;
+    color: white;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    text-align: left; 
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.col1_btn::after {
+    
+    width: 0; /*faz com que fique escondido*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /*tamanho do botão*/
+    background: red;
+    content: ''; /*é necessario ou então nao funciona*/
+    transition: all .4s; /*transiçao que faz crescer*/
+    z-index: -1; /* after tem de ser menos que o normal. É absoluto em relação ao anterior.  */
+}
+
+.col1_btn:hover::after{ 
+    width: 100%
+}
+
+
+.col2{    
+    width: calc(100% - 221px); /*faz com que a coluna ocupe o resto do espaço*/
+
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 40px;
+    z-index: 9999;
+}
+
+.nav_buttons{
+    color: white;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+
+.span_btn{
+    padding: 10px 10px 10px;
+}
+
+.icons{
+    padding-top: 8px;
+    padding-right: 10px;
+}
+.nav_1_search{
+    padding-right: 15px;
+}
+.nav_1_bell{
+    padding-right: 10px;
+}
+
+.heading{
+        position: relative;
+    }
+
+.main_image{
+    width: 100%;
+}
+
+.heading_text{
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text_heading{
+    font-size: 5rem;
+    font-weight: 800;
+    color: white;
+}
+
+ .heading_btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    width: 80%;
+    justify-content: space-between;
+    font-size: .85rem;
+}
+
+.heading_btn1{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+}
+.heading_btn2{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgba(255,255,255,.5);
+    
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;    
+}
+.row_1{
+    margin-top: 20px;
+}
+
+.row_1_header{
+    display: flex;
+    align-items: center;
+    font-size: .85rem;
+    color: white;
+}
+
+.thumbnails{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+}
+
+.thumbnail_image{
+    margin-right: 20px;
+    width: 230px;
+}
+
+.row_2{
+    margin-top: 60px;
+}
+.row_2_header{
+    display: flex;
+    align-items: center;
+    font-size: .85rem;
+    color: white;
+}
+
+.thumbnail_image1{
+    margin-right: 10px;
+    width: 15%;
+    height: 15%;
+}
+
+
+

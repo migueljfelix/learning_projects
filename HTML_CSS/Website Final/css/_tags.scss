@@ -1,0 +1,23 @@
+.tag{
+    font-size: 10px;
+    font-weight: 400;
+    padding: 4px 8px 4px 8px;
+    border-radius: 19px 19px;
+    border: 0.5px solid $tagsgray;
+    color: $black;
+    background-color: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+    margin-right: 12px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.tag--blue{
+    background-color: $blue;
+    color: $white;
+    border: 0.5px solid $violet;
+}
+
+.tag--space{
+    margin-right: 27.28px;
+}

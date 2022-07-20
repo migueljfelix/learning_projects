@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.buttons__wrapper {
+    width: 500px;
+    margin: 16px auto;
+}
+
+.d-flex {
+    display: flex;
+    gap: 12px;
+}
+ 
+.btn {
+    margin-top: 10px;
+    padding: 15px 20px;
+    border: 0px;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 8px 16px;
+    /* Margin: dá a margem fora do botão
+        border-radius: faz as pontas do botão redondas
+        padding: margem do conteudo até ao butão
+    */
+}
+.btn-small{
+    padding: 5px 20px;
+    /* por estar abaixo do outro padding elimina o anterior */
+}
+
+.btn-outlines{
+    background-color: transparent;
+    border: 1px solid;
+    /* cores são especificas, e todos os outlines têm fundo transparente */
+}
+
+.primary{
+    background-color: #1652F0;
+    color: white;
+}
+/*nao misturar semantica com decoração. Todos os blue buttons têm fundo branco. Editar todas as cores */
+.success{
+
+    background-color:#14cf3C;
+    color: white;
+}
+
+.danger{
+    background-color: #cf1414;
+    color: white;
+}
+.warning {
+    background-color: #dbac2b;
+    color: white;
+}
+
+.outlines-primary{
+    border-color; color:#1652F0;
+}
+
+.outlines-success{
+    border-color; color:#14cf3C;
+}
+
+.outlines-danger{
+    border-color; color: #cf1414;
+}
+
+.outlines-warning {
+    border-color; color: #dbac2b;
+}
+

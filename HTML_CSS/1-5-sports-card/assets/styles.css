@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "IBM Plex Sans", sans-serif ;
+    color: white;
+    background-color: blue;
+    background: linear-gradient(90deg, red,blue);
+    
+}
+
+.content{
+    background-color: red;
+    background: linear-gradient(45deg, red,red, orange);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card{
+    width:100%;
+    max-width: 450px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    height: 750px;
+    margin-top: 50px;
+    background-color: white;
+   /* background-color: red;
+    background: linear-gradient(45deg, red,red, orange);
+    */
+    border-radius: 10px; 
+    box-shadow: black 5px 10px 19px;    
+}
+
+
+.card_header{
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.nike_logo{
+    display: inline-block;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+p{
+    padding-left: 10px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+}
+h3{
+
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 200;
+}
+/* margin afeta o background ao contrario do padding!!!! */
+
+
+h2{
+    margin: 0px;
+    padding-left: 10px;
+    font-weight: 200;
+}
+
+h1{
+    font-size: 19rem;
+    overflow: hidden;
+    margin: 0px;
+    text-align: center;
+    text-indent: -50px;
+    opacity: 0.4;
+    letter-spacing: 15px;
+}
+
+.card_footer{
+    padding-top: 35px;
+    padding-left: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btn{
+    position: relative;
+    z-index: 99999;
+    display: block;
+    margin: 0 auto;
+    /* estes dois centram o botao no meio do cartão */
+    margin-top: 10px;
+    border-color: blue;
+    color: blue;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 20px 70px;
+    font-size: 20px;
+    transition: all .5s;
+        /* a transição fica naquele que está sempre à mostra, neste caso no btn*/
+}
+
+.btn:hover{
+    background: blue;
+    border: 2px solid blue;
+    color: white;
+    cursor: pointer;
+   
+}
+
+.card_footer_span{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    color: grey;
+    letter-spacing: 10px;
+    font-size: 12px;
+    font-weight:bold;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.sapatilha{
+    width: 125%;
+    position: absolute;
+    bottom: 25px;
+    left: 95px;
+}
+/*
+imagem do sapato como absoluto do cartao, em cima do botao que passa a ser relativo
+sapatilha com bottom 0 
+*/
+
+.card{
+    animation: move 3s infinite;
+    transform: rotate(-5deg);
+}
+
+@keyframes move{
+    50% { transform: rotate(-10deg);}
+}
+/* roda 5 graus*/ 
+.card{
+    animation: move 3s infinite;
+    transform: rotate(+5deg);
+}

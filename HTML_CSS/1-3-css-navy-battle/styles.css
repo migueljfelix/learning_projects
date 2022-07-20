@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+html, body {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.board {
+    border: 1px solid gainsboro;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.cell {
+    border: 1px dashed gainsboro;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.target {
+    background-color: gainsboro;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background: slateblue;
+    position: absolute;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+pre {
+    display: inline;
+}
+
+
+
+/* Coloca o teu CSS a partir daqui */
+.ball-0 {
+    position: absolute;
+    right: 0px;
+}
+
+.ball-1 {
+ position: absolute;
+ left: 120px;
+}
+
+.ball-2 {
+    position: absolute;
+    left: 160px;
+
+}
+
+.ball-3 {
+    position: absolute;
+    left: 80px;
+
+}
+
+.ball-4 {
+    position: absolute;
+   right: 120px;
+}
+
+.ball-5 {
+    position: absolute;
+    left: 80px;
+
+}
+
+.ball-6 {
+    position: absolute;
+    left: 120px;
+    top: 160px;
+
+
+}
+
+.ball-7 {
+position: absolute;
+right: 120px;
+bottom: 120px;
+}
+
+.ball-8 {
+position: absolute;
+left: 40px;
+top: 80px;
+}
+
+.ball-9 {
+    position: absolute;
+    left: 120px;
+    top: 80px;
+
+}
+/* a bola é absoluta em relação ao board. 
+    Absoluto é sempre relativo a algo
+    .absoluto significa que fica praticamente uma layer acima dos outros.
+*/
+
+/
+.ball-10 {
+
+}

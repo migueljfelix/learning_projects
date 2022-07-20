@@ -1,0 +1,65 @@
+html{
+    font-family: 'Vollkorn', serif;
+}
+.all{
+    width: 775px;
+    margin: auto;
+    /*width dá o tamanho ao bloco e a margem como é auto centra o conteudo*/
+}
+nav{
+    margin-top: 1%;
+    padding: 16px 17px;
+}
+a{
+    margin-left: 10px;
+    padding: 16px 17px;
+    text-decoration: none;
+    color: gainsboro;
+    font-size: 1rem;
+}
+.btn1{
+    background-color: black;
+    color: white;
+    margin-left: 30%;
+}
+
+.header{
+    display: inline-block;
+    text-align: center;
+}
+
+.img1{
+    width: 100%;
+}
+
+.highlight{
+    background-color: black;
+    margin-top: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 7px;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.white{
+    color: white;
+    margin: 0px;
+}
+
+
+
+.article{
+    display: inline-flex;
+}
+
+.article_img{
+    display: inline-block;
+    margin: 2% 2%;
+    padding: 10px 10px;
+    /* o padding também aumenta o tamanho do bloco! */
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../0-6-html-calendar"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "0-7-html-final"
+	}
+}

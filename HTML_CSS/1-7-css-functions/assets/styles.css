@@ -1,0 +1,81 @@
+.perspective-square{
+    border-radius: 28px;
+    transform: rotate(45deg) skew(354deg, 342deg) scale(1);
+    box-shadow: 4px 10px 24px -4px rgb(0 0 0 / 79%);
+    animation: bounce 1s linear infinite;
+}
+
+@keyframes bounce{
+    20%, 50%, 80%, to{
+        transform: translateY(0) rotate(45deg) skew(354deg, 342deg) scale(1);
+    }
+    40%{
+        transform: translateY(-30px) rotate(45deg) skew(354deg, 342deg) scale(1);
+    }
+    70%{
+        transform: translateY(-15px) rotate(45deg) skew(354deg, 342deg) scale(1);
+    }
+    90%{
+        transform: translateY(-4px) rotate(45deg) skew(354deg, 342deg) scale(1);
+    }
+}
+
+.z-squares{
+    animation: skew 5s linear infinite;
+    box-shadow: 4px 10px 24px -4px rgb(0 0 0 / 79%);
+}
+
+@keyframes skew{
+    20%, to{
+        transform: skew( 1deg, 34deg);
+    }
+}
+
+.rotate-square{
+    animation: rotation 3s linear ;
+    animation-iteration-count: infinite;
+}
+@keyframes rotation{
+    0%, to{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(250deg); }
+
+    100%{
+        transform: rotate(360deg); }
+}
+
+.colors .hole:nth-child(odd){
+    background-color: #cc33cc;
+}
+
+.four .hole:nth-child(+4){
+    background-color: #cc33cc;
+}
+
+.onetofive .hole:nth-child(-n+5){
+    background-color: #cc33cc;
+}
+
+.last .hole:nth-last-child(1){
+    background-color: #cc33cc;
+}
+
+.square .square-white{
+    background-color: white;
+}
+
+.square .square-black{
+    background-color: black;
+}
+
+.board{
+    height: 350px;
+    width: 350px;
+}
+.face .front{
+    background-color: #cc33cc;
+    width: 350px;
+    height: 350px;
+}

@@ -1,0 +1,29 @@
+
+ .btn{
+     font-size: 14px;
+     font-weight: 400;
+     text-align: center;
+     padding: 8px 16px;
+     color: $black;
+ }
+
+ .btn--blue{
+     background-color: $blue;
+     color: $white;
+ }
+
+ .btn--black{
+     background-color: $black;
+     color: $white;
+ }
+
+ .btn--rounded{
+     background-color: $blue;
+     color: $white;
+     border-radius: 20px 20px;
+ }
+
+ .btn--white{
+     background-color: $white;
+     color: $blue;
+ }
