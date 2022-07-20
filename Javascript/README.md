@@ -1,0 +1,4 @@
+/*
+
+Theese projects were done in a learning environment in the process of learning Javascript 
+*/
