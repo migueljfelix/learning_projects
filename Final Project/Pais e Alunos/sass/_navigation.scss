@@ -1,0 +1,224 @@
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 68px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $greylighter;
+}
+
+
+header {
+    background-color: $white;
+}
+
+//nav left
+.nav_left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+//nav right
+.nav_right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+//logo
+.nav_logo {
+    height: 19px;
+}
+
+
+//navigation icons
+.nav_icon {
+    font-size: 19px;
+}
+
+
+//nav space between icons
+.i_space {
+    padding-right: 24px;
+}
+
+//Hamburguer dropdown
+#hamburguer-dropdown {
+    left: 100vw;
+    top: 0px;
+    justify-content: flex-end;
+    transition: all 0.3s;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &.active {
+        left: 0vw;
+    }
+}
+
+.menu-dropdown {
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    height: 100vh;
+    width: 100%;
+    justify-content: flex-end;
+    transition: all .5s;
+
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        background-color: $lighterblue;
+    }
+
+    &__logout {
+        width: 100%;
+        background-color: $lighterblue;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 32px;
+    }
+
+    &__container {
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+        padding-top: 8px;
+        padding-left: 16px;
+    }
+
+    &__link {
+        @include regular18;
+        color: $greydarker;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 12px;
+
+        &:hover {
+            padding-left: 14px;
+            @include semibold18;
+            color: $primary;
+        }
+    }
+
+    &__link-icon {
+        color: $greymedium;
+        font-size: 16px;
+        padding-right: 12px;
+    }
+
+    &__link-active {
+        @include semibold18;
+        color: $primary;
+    }
+
+    &__link-icon-active {
+        @include semibold18;
+        color: $primary;
+    }
+}
+
+.hamburguer-btn {
+    color: $greydarker;
+}
+
+
+.desktop-nav {
+    display: none;
+}
+
+//media for desktop
+@media(min-width: $desktop) {
+    header {
+        height: 92px;
+        display: flex;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav_logo {
+        height: 32px;
+    }
+
+    .nav_right {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        &__left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__link {
+            @include regular16;
+            color: $greydarker;
+            margin-right: 12px;
+            margin-left: 12px;
+            text-align: center;
+
+            &:hover {
+                @include semibold16;
+                color: $primary;
+            }
+        }
+
+        &__link-active {
+            @include semibold16;
+            color: $primary;
+        }
+
+        &__right {
+            display: flex;
+            align-items: center;
+        }
+
+        &__icon1 {
+            color: $greydarker;
+            font-size: 16px;
+            padding-left: 28px;
+            margin-right: 28px;
+            border-left: 1px solid $greylight;
+
+            &:hover {
+                cursor: pointer;
+                color: $primary;
+            }
+        }
+
+        &__icon2 {
+            color: $greydarker;
+
+            &:hover {
+                cursor: pointer;
+                color: $primary;
+            }
+        }
+    }
+
+    .desktop-navbtn {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 12px;
+        margin-right: 24px;
+        text-align: center;
+    }
+}

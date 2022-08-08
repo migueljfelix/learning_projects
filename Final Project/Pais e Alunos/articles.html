@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sass/Main.css">
+    <link rel="stylesheet" href="/PaisAlunos-v1.0/style.css">
+    <title>Pais & Alunos</title>
+</head>
+
+<body>
+    <!--------------------- MENU ----------------------->
+    <header class="gridrowfull">
+        <nav class=" gridrow nav">
+            <section class="col-6 col-t-6 col-d-3">
+                <!--  navigation on left side  -->
+                <div class="nav_left">
+                    <a href="/index.html"> <img class="nav_logo" src="Assets/logo_primary.svg" alt="pais e alunos"> </a>
+                </div>
+            </section>
+
+            <section class="col-6 col-t-6 nav_right">
+                <!--  navigation on right side  -->
+                <div class="nav_right">
+                    <i class="nav_icon i_space i-search"></i>
+                    <a href="javascript:void(0);" class="hamburguer-btn" onclick="myFunction()"> <i id="hamburger"
+                            class="nav_icon i-menu"></i></a>
+                </div>
+            </section>
+            <section class="col-9 col-t-9 col-d-9 desktop-nav">
+                <div class="desktop-nav__left">
+                    <a href="podcast.html" class="desktop-nav__link">Podcast</a>
+                    <a href="/articles.html" class="desktop-nav__link">Artigos</a>
+                    <a href="#" class="desktop-nav__link ">Contactar um especialista</a>
+                    <a href="#" class="btn-s btn-border-primary desktop-navbtn">Subscrever newsletter</a>
+                </div>
+                <div class="desktop-nav__right">
+                    <a href="#"> <i class="i-search desktop-nav__icon1"></i></a>
+                    <a href="#"> <i class="i-user desktop-nav__icon2"></i></a>
+
+                </div>
+            </section>
+        </nav>
+
+    </header>
+    <section id="hamburguer-dropdown" class="menu-dropdown gridrow">
+        <div class="menu-dropdown__header col-12">
+            <a href="javascript:void(0);" class="menu-dropdown__close-btn icon icon--primary" onclick="myFunction()">
+                <i id="hamburger" class="menu-dropdown__icon i-remove"></i></a>
+        </div>
+        <div class="user-card">
+            <div class="user-card__left">
+                <img class="user-card__thumbnail" src="/Assets/specialist.jpg" alt="specialist picture">
+            </div>
+            <div class="user-card__right">
+                <h5 class="user-card__name">Amélia Rodrigues</h5>
+                <p class="user-card__email">ameliarodrigues_88@gmail.com</p>
+            </div>
+        </div>
+        <div class="menu-dropdown__logout">
+            <a class="btn btn-light menu-dropdown__logout-btn">Logout</a></div>
+
+        <div class="menu-dropdown__container">
+            <a href="/index.html" class="menu-dropdown__link "><i
+                    class="i-home i-announcement menu-dropdown__link-icon "></i>Homepage</a>
+            <a href="/podcast.html" class="menu-dropdown__link"><i
+                    class="i-announcement menu-dropdown__link-icon"></i>Podcast</a>
+            <a href="/articles.html" class="menu-dropdown__link menu-dropdown__link-active "><i
+                    class="i-book menu-dropdown__link-icon menu-dropdown__link-icon-active"></i>Artigos</a>
+            <a href="/articles.html" class="menu-dropdown__link "><i
+                    class="i-message menu-dropdown__link-icon"></i>Contactar um especialista</a>
+        </div>
+    </section>
+    <!---------------- MENU END ---------------->
+
+    <section class="articles-categories gridrowfull">
+        <div class="categories">
+            <a class="categories__link">Todos</a>
+            <a class="categories__link categories__activated">Cidadania</a>
+            <a class="categories__link ">Ambiente e Sustentabilidade</a>
+            <a class="categories__link">Soft Skills</a>
+            <a class="categories__link">Alimentação e Nutrição</a>
+            <a class="categories__link">Desporto</a>
+            <a class="categories__link">Literacia Financeira</a>
+            <a class="categories__link">Saúde Mental</a>
+            <a class="categories__link">Sexualidade</a>
+            <a class="categories__link">Outros</a>
+        </div>
+    </section>
+
+
+    <main class="gridrowfull articles-main">
+        <div class="gridrow">
+            <div class="col-12 col-d-9 articles-margin">
+                <!-- col 9 e depois articles margin dá a margin  -->
+                <div class="gridrowfull">
+                    <!--gridrow full poe as tags em toda a div-->
+                    <section class="filters-container col-12">
+                        <div class="filters-container__filters">
+                            <h4 class="filters-container__filters-title">Todos os artigos (48)</h4>
+                            <div class="filters-container__filters-icons">
+                                <a class="tag tag--primary filters-container__filters-icons-1"><i
+                                        class=" i-selector"></i></a>
+                                <a class="tag tag--primary filters-container__filters-icons-2"><i
+                                        class=" i-filters"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Artigo 1-->
+                    <div class="col-12 col-t-6 col-d-6">
+                        <div class="card-article">
+                            <div class="gridrowfull article-header-image">
+                                <img class="article-header-image__img" src="/Assets/food.jpg" alt="alimentação">
+                                <div class="article-header-image__tags">
+                                    <a href="#" class="tag tag--light tag--green">Alimentação e Nutrição</a>
+                                    <a href="#" class="icon--xs icon--white"><i
+                                            class="article-bookmark i-bookmark"></i></a>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <p class="article-content__title">Distúrbios alimentares na adolescência: conheça os
+                                    sinais e os
+                                    sintomas </p>
+                                <p class="article-content__author">Joana Nogueira</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Artigo 2-->
+                    <div class="col-12 col-t-6 col-d-6">
+                        <div class="card-article">
+                            <div class="gridrowfull article-header-image">
+                                <img class="article-header-image__img" src="/Assets/saude mental.jpg"
+                                    alt="saude mental">
+                                <div class="article-header-image__tags">
+                                    <a href="#" class="tag tag--light tag--orange">Saúde Mental</a>
+                                    <a href="#" class="icon--xs icon--white"><i
+                                            class="article-bookmark i-bookmark"></i></a>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <p class="article-content__title">Cyberbullying: o que é, como prevenir e como intervir
+                                </p>
+                                <p class="article-content__author">Ana Rodrigues da Costa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Artigo 3-->
+                    <div class="col-12 col-t-6 col-d-6">
+                        <div class="card-article">
+                            <div class="gridrowfull article-header-image">
+                                <img class="article-header-image__img" src="/Assets/cidadania.jpg" alt="saude mental">
+                                <div class="article-header-image__tags">
+                                    <a href="#" class="tag tag--light tag--yellow">Cidadania</a>
+                                    <a href="#" class="icon--xs icon--white"><i
+                                            class="article-bookmark i-bookmark"></i></a>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <p class="article-content__title">11 hábitos de pais que procuram ser conscientes</p>
+                                <p class="article-content__author">Mikaela Övén</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Artigo 3-->
+                    <div class="col-12 col-t-6 col-d-6">
+                        <div class="card-article">
+                            <div class="gridrowfull article-header-image">
+                                <img class="article-header-image__img" src="/Assets/literacia.jpg" alt="saude mental">
+                                <div class="article-header-image__tags">
+                                    <a href="#" class="tag tag--light tag--purple">Literacia Financeira</a>
+                                    <a href="#" class="icon--xs icon--white"><i
+                                            class="article-bookmark i-bookmark"></i></a>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <p class="article-content__title">A importância da literacia financeira na educação das
+                                    crianças
+                                    e jovens</p>
+                                <p class="article-content__author">Paulo Alcarva</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe-card col-12 col-t-4 offset-t-4 offset-d col-d-3">
+                <div class="subscribe-card__img">
+                    <img class="subscribe-card__img-image" src="/Assets/world.png" alt="background picture">
+                </div>
+                <div class="subscribe-card__content">
+                    <h2>Torne-se Subscritor</h2>
+                    <p class="subscribe-card__content-p"><i class="i-stars"></i>Artigos exclusivos</p>
+                    <p class="subscribe-card__content-p"><i class="i-ticket"></i>Promoções e descontos</p>
+                    <p class="subscribe-card__content-p"><i class="i-book"></i>Newsletter à sua medida</p>
+                    <p class="subscribe-card__content-p"><i class="i-user"></i>Conselhos de especialistas</p>
+                    <a class="btn btn-light subscribe-card__content-btn col-12">Subscrever</a>
+                    <p class="subscribe-card__content-plus">saiba mais <i
+                            class="i-arrow-right subscribe-card__content-arrow"></i></p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="/Js/nav.js">
+    </script>
+</body>
+
+</html>

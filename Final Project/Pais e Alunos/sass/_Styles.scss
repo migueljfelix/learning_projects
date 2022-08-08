@@ -1,0 +1,205 @@
+//typography import
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+//brand colors
+$primary: #009de0;
+$secondary: #000000;
+
+//semantic colors
+$success: #008000;
+$error: #FF0000;
+$alert: #F9AE35;
+$info: #428BCA;
+
+//Grey Scale
+$greydarker: #2B2B2B;
+$greydark: #3B3D3D;
+$greymedium: #9D9D9D;
+$greymediumlight: #CCCCCC;
+$greylight: #DDDDDD;
+$greylighter: #EEEEEE;
+
+//other colors
+$white: #FFFFFF;
+$lightblue:#47C8FF;
+$lighterblue: #EFFBFF;
+$blue: #009DE0;
+$blue2:#47C8FF;
+// Tag colors
+
+$yellow: #FFF6D0;
+$orange: #FFD6CD;
+$green: #DBF9EC;
+$purple:#E7E1F9;
+$pink:#FFEAFA;
+
+//screen sizes
+$tablet: 750px;
+$desktop: 1200px;
+$desktoplg: 14040px;
+$animationtime: 0.7s;
+$gridgutter: 16px;
+$gridgutterdesktop: 24px;
+$gridcolumns: 12;
+$gridwidth: calc(100% - #{$gridgutter});
+$gridwidtht: calc(90% - #{$gridgutter});
+$gridwidthd: calc(100% - 120px);
+$gridwidthdlg: calc(100% - 120px);
+
+$basefontsizemobile: $gridgutter / 3 * 2;
+$basefontsizetablet: $gridgutter / 3 * 2+1;
+$basefontsizedesktop: $gridgutter / 3 * 2+2;
+
+/* ------------------fonts and variations -----------------------*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+//Semibold
+@mixin semibold48 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 600;
+}
+
+@mixin semibold40 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+@mixin semibold32 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+}
+
+@mixin semibold24 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+@mixin semibold20 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+@mixin semibold18 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+@mixin semibold16 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+@mixin semibold14 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+@mixin semibold14-2 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+@mixin semibold12 {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+// regular
+@mixin regular18 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+@mixin regular16 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+@mixin regular14 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+@mixin regular12 {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+//light
+@mixin light18 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+@mixin light16 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+@mixin light14 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+@mixin light12 {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+
+/* ------------------ SHADOWS -----------------------*/
+
+//grey
+@mixin shadow1 {
+    box-shadow: 0px 8px 4px -8px rgba(0, 0, 0, 0.2);
+}
+
+@mixin shadow2 {
+    box-shadow: 0px 8px 8px -8px rgba(0, 0, 0, 0.2);
+}
+
+@mixin shadow3 {
+    box-shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.2);
+}
+
+@mixin shadow4 {
+    box-shadow: 0px 24px 24px -16px rgba(0, 0, 0, 0.2);
+}
+
+@mixin shadow5 {
+    box-shadow: 0px 32px 32px -16px rgba(0, 0, 0, 0.2);
+}
+
+@mixin shadow6 {
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+}
+
+//blue
+
+@mixin shadowb2 {
+    box-shadow: 0px 8px 8px -8px rgba(0, 157, 224, 0.2);
+}
+
+@mixin shadowb4 {
+    box-shadow: 0px 24px 24px -16px rgba(0, 157, 224, 0.2);
+}

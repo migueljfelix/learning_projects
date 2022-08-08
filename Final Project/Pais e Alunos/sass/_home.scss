@@ -1,0 +1,285 @@
+/*Main homepage*/
+.homepage-main{
+    background-color: $lighterblue;
+    position: relative;
+}
+
+
+/*--------------------------  HEADER   ---------------------------*/
+.heading{
+    margin-top: 68px;
+    background-color: $lightblue;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+
+/*--------- HEADER TOP  -------------------*/
+.heading-top{
+    padding: 48px 16px 0px 16px;
+    &__title{
+        @include semibold32;
+        color: $white;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    &__p{
+        @include regular16;
+        color: $white;
+        text-align:center;
+        margin-bottom: 32px;
+    }
+    &__btn-top{
+        display: none;
+        color:$primary;
+        margin-left: 8px;
+        margin-right: 8px;
+        /* margin 8 so that it aligns with the grid*/
+        margin-bottom: 18px;
+    }
+    &__logo{
+        display: none;
+        margin-top: 48px;
+        align-items: flex-start;
+    }
+    &__logo-title{
+        display: none;
+        @include regular12;
+        color: $white;
+        margin-bottom: 8px;
+    }
+    &__logo-img{
+        display: none;
+        height: 32px;
+        width: auto;
+    }
+}
+
+ /*--------- HEADER bottom  -------------------*/
+.heading-bottom{
+    &__img{
+        width: 100vw;
+        height: auto;
+    }
+}
+
+
+/*-------------- PORTO EDITORA SECTION   --------------------------*/
+.about{
+    box-shadow: 0px 24px 24px -16px rgba(0, 157, 224, 0.2);
+    background-color: white;
+    padding: 24px;
+ //   margin-top: -80px;
+    z-index: 12;
+//    margin-left: 16px;
+//   margin-right: 16px;
+    border-radius: 16px;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    &__logo-title{
+        @include regular12;
+        color: $greymedium;
+        margin-bottom: 8px;
+    }
+    &__logo-img{
+        height: 30px;
+        width: auto;
+    }
+    &>p{
+        @include regular16;
+        margin-bottom: 16px;
+    }
+    &__span{
+        font-weight: 700;
+    }
+}
+.page-top-margin{
+    margin-top: -80px;
+}
+
+/*--------------------Homepage podcast card--------------------*/
+
+.home-podcast{
+    margin-top: 32px;
+    &__orange{
+        background-color: $orange;
+    }
+    &__pink{
+        background-color: $pink;
+    }
+}
+.podcast-mobile{
+    margin-bottom: 36px;
+}
+
+.podcast-desktop{
+    display: none;
+}
+/*---------------Filters container---------------------*/
+
+.articles-filters{
+    margin-top: 56px;
+    &__filters{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+    &__filters-title{
+        @include semibold16;
+        color: $primary;
+    }
+    &__filters-icons-1{
+        font-size: 16px;
+        margin-right: 8px;
+        border-radius: 100px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+}
+.article-desktop{
+    display: none;
+}
+.btn-spacer{
+    margin-top: 12px;
+    margin-bottom: 56px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.section-doctors{
+    margin-top: 56px;
+    &__dots{
+        text-align: center;
+        color: $primary;
+        font-size: 19px;
+    }
+}
+
+
+
+/*--------MEDIA TABLET*/
+@media(min-width: $tablet){
+    .heading{
+            flex-direction:row;
+            height: 500px;
+            overflow: hidden;
+            }
+    .heading-bottom{
+                position: relative;
+            //    top: -200px;
+                display: flex;
+                align-items: flex-end;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                
+            }
+    .heading-top{
+        margin-left: 50px;
+        &__title{
+            @include semibold40;
+            text-align: left;
+        }
+    &__p{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 32px;
+    }
+    &__btn-top{
+        display: inline;
+    }
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+        align-items: flex-start;
+        margin-left: 8px;
+    }
+    
+    &__logo-img{
+        display: inline;
+    }
+    &__logo-title{
+        margin-top: 8px;
+        display: inline;
+    }
+    }
+    .about{
+        &__top{
+            display: none;
+        }
+        &__logo-title{
+            display: none;
+        }
+        &__logo-img{
+            display: none;
+        }
+        &>a{
+            display: none;
+        }
+    }
+    
+   /* .home-podcast{
+        margin-top: 200px;
+    }*/
+}
+
+/*-------MEDIA Desktop*/
+
+@media(min-width: $desktop){
+    .podcast-mobile{
+        display: none;
+    }
+    .heading-bottom{
+        margin-top: -270px;
+    }
+    .page-top-margin{
+        margin-top: -100px;
+        
+    }
+    .podcast-desktop{
+        display: flex;
+        margin-top: -210px !important;
+        height: 700px;
+        margin-bottom: 30px;
+    }
+    .home-podcast{
+        z-index: 15;
+        margin-top: 0px;
+        }
+    .articles-section{
+        margin-top: 36px;
+    }
+    .articles-filters{
+        width: 100%;      
+        flex-wrap: wrap;
+        display: flex;
+       }
+    .btn-spacer{
+        display: none;
+    }
+    .article-desktop{
+        display: flex;
+    }
+    /*.subscribe-card{
+        margin-right: 68px;
+    }*/
+    .inf-input-card-home{
+        padding-top: 116px;
+        display: flex;
+        flex-direction: row;
+        &__content{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+

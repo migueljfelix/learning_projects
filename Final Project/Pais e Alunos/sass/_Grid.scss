@@ -1,0 +1,117 @@
+.gridrowfull{
+    width: 100%;
+}
+.gridrow{
+    width: $gridwidth;
+    margin: 0 auto;
+    @media(min-width: $tablet){
+        width: $gridwidtht;
+    }
+    @media(min-width: $desktop){
+        width: $gridwidthd;
+    }
+    @media(min-width: $desktoplg){
+        width: $gridwidthdlg;
+    }
+}
+
+.gridrowfull, .gridrow{
+    display: flex;
+    flex-wrap: wrap;
+    .col{
+        flex: 1;
+        box-sizing: border-box;
+        padding-left: $gridgutter / 2;
+        padding-right: $gridgutter / 2;
+        @media(min-width:$desktop){
+            padding-left: $gridgutterdesktop / 2;
+            padding-right: $gridgutterdesktop / 2;
+        }
+    }
+    @for $i from 1 through $gridcolumns {
+        .col-#{$i} {
+            box-sizing: border-box;
+            width: percentage($i/$gridcolumns);
+            padding-left: $gridgutter / 2;
+            padding-right: $gridgutter / 2;
+            @media(min-width:$desktop){
+                padding-left: $gridgutterdesktop / 2;
+                padding-right: $gridgutterdesktop / 2;
+            }
+        }
+        .offset-#{$i} {
+            margin-left: percentage($i/$gridcolumns);
+        }
+        .order-#{$i}{
+            order: $i;
+        }
+    }
+    @media(min-width: $tablet){
+        .col-t{
+            flex: 1;
+            box-sizing: border-box;
+            padding-left: $gridgutter / 2;
+            padding-right: $gridgutter / 2;
+            @media(min-width:$desktop){
+                padding-left: $gridgutterdesktop / 2;
+                padding-right: $gridgutterdesktop / 2;
+            }
+        }
+        .offset-t{
+            margin-left: 0;
+        }
+        @for $i from 1 through $gridcolumns {
+            .col-t-#{$i} {
+                box-sizing: border-box;
+                width: percentage($i/$gridcolumns);
+                padding-left: $gridgutter / 2;
+                padding-right: $gridgutter / 2;
+                @media(min-width:$desktop){
+                    padding-left: $gridgutterdesktop / 2;
+                    padding-right: $gridgutterdesktop / 2;
+                }
+            }
+            .offset-t-#{$i} {           
+                margin-left: percentage($i/$gridcolumns);
+            }
+            .order-t-#{$i}{     //* ordenar entre mobile e desktop ordem
+                order: $i;
+            }
+        }
+    }
+    @media(min-width: $desktop){
+        .col-d{
+            flex: 1;
+            box-sizing: border-box;
+            padding-left: $gridgutterdesktop / 2;
+            padding-right: $gridgutterdesktop / 2;
+        }
+        .offset-d{  //* margem
+            margin-left: 0;
+        }
+        @for $i from 1 through $gridcolumns {
+            .col-d-#{$i} {
+                box-sizing: border-box;
+                width: percentage($i/$gridcolumns);
+                padding-left: $gridgutterdesktop / 2;
+                padding-right: $gridgutterdesktop / 2;
+            }
+            .offset-d-#{$i} {
+                margin-left: percentage($i/$gridcolumns);
+            }
+            .order-d-#{$i}{
+                order: $i;
+            }
+        }
+    }
+    &.nogutter{ // no gutter
+        .col, .col-t, .col-d {
+            padding: 0;
+        }
+        @for $i from 1 through $gridcolumns {
+            .col-#{$i}, .col-t-#{$i}, .col-d-#{$i} {
+                padding: 0;
+            }
+        }
+    }
+}

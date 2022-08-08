@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sass/Main.css">
+    <link rel="stylesheet" href="/PaisAlunos-v1.0/style.css">
+    <title>Pais & Alunos</title>
+</head>
+<body>
+    <!--------------------- MENU ----------------------->
+    <header class="gridrowfull">
+        <nav class=" gridrow nav">
+            <section class="col-6 col-t-6 col-d-3"> <!--  navigation on left side  -->
+                <div class="nav_left">
+                 <a href="/home.html"> <img class="nav_logo" src="Assets/logo_primary.svg" alt="pais e alunos"> </a>
+                </div>
+            </section>
+
+            <section class="col-6 col-t-6 nav_right">  <!--  navigation on right side  -->
+                <div class="nav_right">
+                    <i class="nav_icon i_space i-search"></i>
+                    <a href="javascript:void(0);"class="hamburguer-btn" onclick="myFunction()"> <i id="hamburger" class="nav_icon i-menu"></i></a>
+                    </div>
+                </section>
+            <section class="col-9 col-t-9 col-d-9 desktop-nav">
+                <div class="desktop-nav__left">
+                    <a href="#" class="desktop-nav__link">Podcast</a>
+                    <a href="/articles.html" class="desktop-nav__link">Artigos</a>
+                    <a href="#" class="desktop-nav__link ">Contactar um especialista</a>
+                    <a href="#" class="btn-s btn-border-primary desktop-navbtn">Subscrever newsletter</a>
+                </div>
+                <div class="desktop-nav__right">
+                   <a href="#"> <i class="i-search desktop-nav__icon1"></i></a>
+                   <a href="#"> <i class="i-user desktop-nav__icon2"></i></a>
+
+                </div>
+            </section>
+            </nav>
+            
+    </header>
+    <section id="hamburguer-dropdown" class="menu-dropdown gridrow">
+       <div class="menu-dropdown__header col-12">
+        <a href="javascript:void(0);"class="menu-dropdown__close-btn icon icon--primary" onclick="myFunction()"> 
+            <i id="hamburger" class="menu-dropdown__icon i-remove"></i></a>
+       </div> 
+            <div class="user-card">
+                <div class="user-card__left">
+                   <img class="user-card__thumbnail" src="/Assets/specialist.jpg" alt="specialist picture">
+                </div>
+                <div class="user-card__right">
+                    <h5 class="user-card__name">Amélia Rodrigues</h5>
+                    <p class="user-card__email">ameliarodrigues_88@gmail.com</p>
+                </div>    
+            </div>
+            <div class="menu-dropdown__logout">
+            <a class="btn btn-light menu-dropdown__logout-btn">Logout</a></div>
+            
+        <div class="menu-dropdown__container">
+            <a href="/home.html" class="menu-dropdown__link menu-dropdown__link-active"><i class="i-home i-announcement menu-dropdown__link-icon menu-dropdown__link-icon-active"></i>Homepage</a>
+            <a href="/articles.html" class="menu-dropdown__link"><i class="i-announcement menu-dropdown__link-icon"></i>Podcast</a>
+            <a href="/articles.html" class="menu-dropdown__link "><i class="i-book menu-dropdown__link-icon"></i>Artigos</a>
+            <a href="/articles.html" class="menu-dropdown__link "><i class="i-message menu-dropdown__link-icon"></i>Contactar um especialista</a>
+        </div>
+    </section>
+    <!---------------- MENU END ---------------->
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <br>
+    <br>
+    <section class="gridrow teste">
+            <div class="col-d-8 teste__2"><h1>coluna dew teste</h1></div>
+            <div class="col-d-3 teste__3"><h3>Side bar</h3></div>
+    </section>
+    <br>
+    <br>
+    <br><br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br><br>
+    <br>
+    <div class="gridrow" style="background-color: red;">
+    <a class="btn-s btn-brand col-6"><i class="btn-i-blue i-share"></i>texto do botão</a>
+    </div>
+    <br><br>
+    <br>
+    <br>
+   <section class="gridrow">
+
+        <div class="col-12">
+            <div class="podcast-card">
+                <div class="podcast-card__header">
+                    <img class="podcast-card__header-thumbnail" src="/Assets/podcast girl thumbnail.jpg" alt="podcast image">
+                </div>
+
+                <div class="podcast-card__tags">
+                    <h4 class="podcast-card__ep">#3.Episódio da semana</h4> 
+                    <a class="tag--s tag--color podcast-card__new" href="#">Novo</a>
+                </div>
+
+                <div class="podcast-card__headline">
+                    <h3 class="podcast-card__headline-author">Ana Brandão,</h3>
+                    <h3 class="podcast-card__headline-title">Fala Sobrre Bullying na Infancia</h3>
+                    <p class="podcast-card__headline-date">12 junho ⋅ 45min</p>
+                </div>
+
+                <div class="podcast-card__content">
+                    <a class="btn-s btn-brand  podcast-card__content-btn" href="#"><i class="btn-i i-play podcast-card__icon"></i> Ouvir Podcast</a>
+                    <p class="podcast-card__content-snipet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque, est ut tincidunt malesuada, erat erat lobortis enim, ...</p>
+                    <p class="podcast-card__content-more">Ler mais...</p>
+                </div>
+            
+                <div class="podcast-card__footer">
+                    <div class="podcast-card__footer-container">
+                        <p class="podcast-card__footer-themes">Temas abordados:</p>
+                        <a class="tag--s tag--dark">Saúde mental</a>
+                        <a class="tag--s tag--dark">Bullying</a>
+                    </div>         
+                    <a class="icon icon--primary podcast-card__footer-icon"><i class="i-share"></i></a>
+                </div>
+            </div>
+        </div>
+   </section>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+<section>
+    <h1>Estruturas</h1>
+<br>
+<br>
+    <!--Exemplo card com e sem imagem-->
+  <div class="gridrow">
+    <div class="col-3">
+    <div class="card-article">
+        <div class="gridrowfull article-header-image">
+            <a href="#" class="tag  tag--light">Nutrição</a>
+            <i class="article-bookmark i-bookmark"></i>
+        </div>
+        <div class="article-content">
+            <p class="article-content__title">11 hábitos de pais que procuram ser conscientes</p>
+            <p class="article-content__author">Por Ana Mota</p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="gridrow">
+        <div class="card-article col-12">
+            <div class="gridrowfull article-header">
+                <a href="#" class="tag tag--light">Nutrição</a>
+                <i class="article-bookmark i-bookmark"></i>
+            </div>
+            <div class="article-content">
+                <p class="article-content__title">11 hábitos de pais que procuram ser conscientes</p>
+                <p class="article-content__author">Por Ana Mota</p>
+            </div>
+    </div>
+    </div>
+
+    <a href="/PaisAlunos-v1.0/demo.html">icones</a>
+    <!-- link para a pagina dos icones -->
+
+
+
+    <!----------------Teste de icons com fonte-------------->
+<div class="teste"> <i class="icon i-play"></i></div>
+
+<!--como usar o i ---
+
+    tag de <i> e dá-se na classe o icone que é necessário 
+         --icone de calendario--
+            <i class="i-calendar"></i>
+
+            depois é preciso dar mais uma classe para editar o tamanho que 
+            será editado com font-size.
+-->
+
+    <i class="i-calendar"></i>
+
+</section>
+
+    <section class="gridrow">
+        <div class="col-12">
+            <div class="download-card">
+                <a href="#" class="download-card__tag tag--s tag--dark">Ebook</a>
+                <h4 class="download-card__title">Bullying de A-Z</h4>
+                <a href="#" class="btn btn-dark download-card__btn"><i class="download-card__icon i-download"></i> Download</a>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section class="gridrow">
+        <div class="col-12">
+            <div class="episode-card">
+                <div class="episode-card__left">
+                    <img class="episode-card__thumbnail" src="Assets/episode tumbnail.png" alt="Episode thumbnail">
+                </div>
+                <div class="episode-card__right">
+                    <p class="episode-card__title"><span class="episode-card__episoden">Episódio 1 ⋅</span> Ana Brandão fala sobre bullying na infância</p>
+                    <a class="tag tag--dark episode-card__tag">Cidadania</a>
+                    <div class="episode-card__footer">
+                        <span class="episode-card__footerspan">12 junho &nbsp; &nbsp; 45min </span>
+                        <a class="icon--s icon--dark episode-card__btn"><i class="i-play episode-card__icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section class="gridrow">
+        <div class="col-12">
+            <div class="host-card">
+                <div class="host-card__back">
+                    <p class="host-card__p">O nosso Host é considerado um dos mais prestigiados pediatras nacionais, é professor auxiliar de Saúde Pública na Faculdade de Ciências Médicas da Universidade Nova de Lisboa e membro da Sociedade Portuguesa de Pediatria.</p>  
+                </div>
+                <div class="host-card__absolute">
+                    <img class="host-card__thumbnail" src="Assets/medico.png" alt="Episode thumbnail">
+                    <div class="host-card__right">
+                        <h5 class="host-card__name">Mário Cordeiro</h5>
+                        <h5 class="host-card__prof">Médico Pediatra</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="gridrowfull">
+    <div class="categories">
+        <a class="categories__link">Bullying</a>
+        <a class="categories__link">Nutrição</a>
+        <a class="categories__link categories__activated">Família</a>
+        <a class="categories__link">Dicas</a>
+        <a class="categories__link">Cidadania</a>
+    </div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+
+<section class="gridrow">
+    <div class="col-12">
+        <div class="specialist-card-big">
+            <div class="specialist-card-big__left">
+               <img class="specialist-card-big__thumbnail" src="/Assets/specialist.jpg" alt="specialist picture">
+            </div>
+            <div class="specialist-card-big__right">
+                <h5 class="specialist-card-big__name">Teresa Paula Marques</h5>
+                <p class="specialist-card-big__prof">Psicóloga</p>
+            </div>       
+     </div>
+
+    </div>
+</section>
+
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+
+<div class="specialist-card">
+    <div class="specialist-card__left">
+       <img class="specialist-card__thumbnail" src="/Assets/specialist.jpg" alt="specialist picture">
+    </div>
+    <div class="specialist-card__right">
+        <h5 class="specialist-card__name">Teresa Paula Marques</h5>
+        <p class="specialist-card__prof">Psicóloga</p>
+    </div>       
+</div>
+<script src="/Js/nav.js">
+</script> 
+</body>
+</html>

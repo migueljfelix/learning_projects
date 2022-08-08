@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sass/Main.css">
+    <link rel="stylesheet" href="/PaisAlunos-v1.0/style.css">
+    <title>Pais & Alunos</title>
+</head>
+
+<body>
+    <!--------------------- MENU ----------------------->
+    <header class="gridrowfull">
+        <nav class=" gridrow nav">
+            <!--  navigation on left side  -->
+            <section class="col-6 col-t-6 col-d-3">
+                <div class="nav_left">
+                    <a href="/index.html"> <img class="nav_logo" src="Assets/logo_primary.svg" alt="pais e alunos"> </a>
+                </div>
+            </section>
+            <!--  navigation on right side  -->
+            <section class="col-6 col-t-6 nav_right">
+                <div class="nav_right">
+                    <i class="nav_icon i_space i-search"></i>
+                    <a href="javascript:void(0);" class="hamburguer-btn" onclick="myFunction()"> <i id="hamburger"
+                            class="nav_icon i-menu"></i></a>
+                </div>
+            </section>
+            <!-- desktop navigation-->
+            <section class="col-9 col-t-9 col-d-9 desktop-nav">
+                <div class="desktop-nav__left">
+                    <a href="/podcast.html" class="desktop-nav__link">Podcast</a>
+                    <a href="/articles.html" class="desktop-nav__link">Artigos</a>
+                    <a href="#" class="desktop-nav__link ">Contactar um especialista</a>
+                    <a href="#" class="btn-s btn-border-primary desktop-navbtn">Subscrever newsletter</a>
+                </div>
+                <div class="desktop-nav__right">
+                    <a href="#"> <i class="i-search desktop-nav__icon1"></i></a>
+                    <a href="#"> <i class="i-user desktop-nav__icon2"></i></a>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <!--Dropdown -->
+    <section id="hamburguer-dropdown" class="menu-dropdown gridrow">
+        <div class="menu-dropdown__header col-12">
+            <a href="javascript:void(0);" class="menu-dropdown__close-btn icon icon--primary" onclick="myFunction()">
+                <i id="hamburger" class="menu-dropdown__icon i-remove"></i></a>
+        </div>
+        <div class="user-card col-12">
+            <div class="user-card__left">
+                <img class="user-card__thumbnail" src="/Assets/specialist.jpg" alt="specialist picture">
+            </div>
+            <div class="user-card__right">
+                <h5 class="user-card__name">Amélia Rodrigues</h5>
+                <p class="user-card__email">ameliarodrigues_88@gmail.com</p>
+            </div>
+        </div>
+        <div class="menu-dropdown__logout">
+            <a class="btn btn-light menu-dropdown__logout-btn">Logout</a></div>
+        <div class="menu-dropdown__container col-12">
+            <a href="/home.html" class="menu-dropdown__link menu-dropdown__link-active"><i
+                    class="i-home i-announcement menu-dropdown__link-icon menu-dropdown__link-icon-active"></i>Homepage</a>
+            <a href="/podcast.html" class="menu-dropdown__link"><i
+                    class="i-announcement menu-dropdown__link-icon"></i>Podcast</a>
+            <a href="/articles.html" class="menu-dropdown__link "><i
+                    class="i-book menu-dropdown__link-icon"></i>Artigos</a>
+            <a href="/articles.html" class="menu-dropdown__link "><i
+                    class="i-message menu-dropdown__link-icon"></i>Contactar um especialista</a>
+        </div>
+    </section>
+    <!---------------- MENU END ---------------->
+    <!-- Homepage header -->
+    <main class="homepage-main">
+        <section class="heading gridrowfull">
+            <div class="heading-top col-12 col-t-12 col-d-6">
+                <h1 class="heading-top__title col-12">Educação para além da escola</h1>
+                <p class="heading-top__p col-12">Estimulando em cada educador a paixão pelo desenvolvimento</p>
+                <a class="btn btn-light heading-top__btn-top col-t-3 col-d-2" href="#">Quero fazer parte</a>
+                <div class="heading-top__logo">
+                    <p class="heading-top__logo-title">Uma marca com cunho</p>
+                    <img class="heading-top__logo-img " src="Assets\Porto Editora_white-black.svg" alt="porto Editora">
+                </div>
+            </div>
+            <div class="heading-bottom col-12 col-t-12 col-d-6 offset-d-6">
+                <img class="heading-bottom__img col-12 imgfit " src="/Assets/homepage illustration.png"
+                    alt="Home Illustration">
+            </div>
+        </section>
+
+        <section class="gridrow page-top-margin">
+            <div class="col-12 col-t-10 col-d-9 articles-margin" style="z-index: 8;">
+                <div class="about">
+                    <div class="about__top">
+                        <p class="about__logo-title">Uma marca com cunho</p>
+                        <img class="about__logo-img col-6" src="Assets\Porto editora_blue-black.svg"
+                            alt="porto Editora">
+                    </div>
+                    <p>Diz-se que é preciso uma aldeia para educar uma criança.</p>
+                    <p>Na <span class="about__span"> Pais & Alunos</span> acreditamos que a educação é uma missão para
+                        além
+                        da escola,
+                        que envolve família, professores e alunos. </p>
+                    <p>Queremos estimular em cada educador a paixão pelo desenvolvimento das crianças e
+                        jovens através de temáticas complementares ao sistema de ensino formal.</p>
+                    <a class="btn-xs btn-border-primary col-12 col-t-3 col-d-2">Ver Mais</a>
+                </div>
+            </div>
+            <!--PODCAST mobile-->
+            <div class="home-podcast col-12 col-t-6 offset-t-3 offset-d col-d-3 podcast-mobile">
+                <div class="podcast-card">
+                    <div class="podcast-card__header">
+                        <img class="podcast-card__header-thumbnail" src="/Assets/Capa Podcast (1).png"
+                            alt="podcast image">
+                    </div>
+
+                    <div class="podcast-card__tags">
+                        <h4 class="podcast-card__ep">#3.Episódio da semana</h4>
+                    </div>
+
+                    <div class="podcast-card__headline">
+                        <h3 class="podcast-card__headline-author">Ana Brandão,</h3>
+                        <h3 class="podcast-card__headline-title">Fala Sobrre Bullying na Infancia</h3>
+                        <p class="podcast-card__headline-date">12 junho ⋅ 45min</p>
+                    </div>
+
+                    <div class="podcast-card__content">
+                        <a class="btn-s btn-brand  podcast-card__content-btn" href="#"><i
+                                class="btn-i i-play podcast-card__icon"></i> Ouvir Podcast</a>
+                        <p class="podcast-card__content-snipet">A criatividade é uma competência fundamental para a o
+                            futuro da nossa sociedade. Mas será que estamos a desenvolver pessoas criativas que</p>
+                        <p class="podcast-card__content-more">Ler mais...</p>
+                    </div>
+
+                    <div class="podcast-card__footer">
+                        <div class="podcast-card__footer-container">
+                            <p class="podcast-card__footer-themes">Temas abordados:</p>
+                            <a class="tag--s tag--colorb home-podcast__orange">Saúde mental</a>
+                            <a class="tag--s tag--colorb home-podcast__pink">Outros</a>
+                        </div>
+                        <a class="icon icon--white podcast-card__footer-icon"><i class="i-share"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-d-9 articles-margin articles-section">
+                <!-- col 9 e depois articles margin dá a margin  -->
+                <div class="gridrowfull">
+                    <!--gridrow full poe as tags em toda a div-->
+                    <section class="filters-container col-12">
+                        <div class="filters-container__filters">
+                            <h4 class="filters-container__filters-title">Todos os artigos (48)</h4>
+                            <div class="filters-container__filters-icons">
+                                <a class="tag tag--primary filters-container__filters-icons-1"><i
+                                        class=" i-selector"></i></a>
+                                <a class="tag tag--primary filters-container__filters-icons-2"><i
+                                        class=" i-filters"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Artigo 1-->
+                    <div class="col-12 col-d-6">
+                        <div class="card-article">
+                            <div class="gridrowfull article-header-image">
+                                <img class="article-header-image__img" src="/Assets/food.jpg" alt="alimentação">
+                                <div class="article-header-image__tags">
+                                    <a href="#" class="tag tag--light tag--green">Alimentação e Nutrição</a>
+                                    <a href="#" class="icon--xs icon--white"><i
+                                            class="article-bookmark i-bookmark"></i></a>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <p class="article-content__title">Distúrbios alimentares na adolescência: conheça os
+                                    sinais e os
+                                    sintomas </p>
+                                <p class="article-content__author">Joana Nogueira</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Artigo 2-->
+                    <div class="col-12 col-d-6">
+                        <div class="card-article">
+                            <div class="gridrowfull article-header-image">
+                                <img class="article-header-image__img" src="/Assets/saude mental.jpg"
+                                    alt="saude mental">
+                                <div class="article-header-image__tags">
+                                    <a href="#" class="tag tag--light tag--orange">Saúde Mental</a>
+                                    <a href="#" class="icon--xs icon--white"><i
+                                            class="article-bookmark i-bookmark"></i></a>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <p class="article-content__title">Cyberbullying: o que é, como prevenir e como intervir
+                                </p>
+                                <p class="article-content__author">Ana Rodrigues da Costa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Artigo 3-->
+                    <div class="col-12 col-d-6">
+                        <div class="card-article">
+                            <div class="gridrowfull article-header-image">
+                                <img class="article-header-image__img" src="/Assets/cidadania.jpg" alt="saude mental">
+                                <div class="article-header-image__tags">
+                                    <a href="#" class="tag tag--light tag--yellow">Cidadania</a>
+                                    <a href="#" class="icon--xs icon--white"><i
+                                            class="article-bookmark i-bookmark"></i></a>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <p class="article-content__title">11 hábitos de pais que procuram ser conscientes</p>
+                                <p class="article-content__author">Mikaela Övén</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Artigo 3-->
+                    <div class="col-12 col-d-6">
+                        <div class="card-article">
+                            <div class="gridrowfull article-header-image">
+                                <img class="article-header-image__img" src="/Assets/literacia.jpg" alt="saude mental">
+                                <div class="article-header-image__tags">
+                                    <a href="#" class="tag tag--light tag--purple">Literacia Financeira</a>
+                                    <a href="#" class="icon--xs icon--white"><i
+                                            class="article-bookmark i-bookmark"></i></a>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <p class="article-content__title">A importância da literacia financeira na educação das
+                                    crianças
+                                    e jovens</p>
+                                <p class="article-content__author">Paulo Alcarva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-d-6">
+                        <div class="card-article">
+                            <div class="gridrowfull article-header-image">
+                                <img class="article-header-image__img" src="/Assets/literacia.jpg" alt="saude mental">
+                                <div class="article-header-image__tags">
+                                    <a href="#" class="tag tag--light tag--purple">Literacia Financeira</a>
+                                    <a href="#" class="icon--xs icon--white"><i
+                                            class="article-bookmark i-bookmark"></i></a>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <p class="article-content__title">A importância da literacia financeira na educação das
+                                    crianças
+                                    e jovens</p>
+                                <p class="article-content__author">Paulo Alcarva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-d-6">
+                        <div class="card-article">
+                            <div class="gridrowfull article-header-image">
+                                <img class="article-header-image__img" src="/Assets/literacia.jpg" alt="saude mental">
+                                <div class="article-header-image__tags">
+                                    <a href="#" class="tag tag--light tag--purple">Literacia Financeira</a>
+                                    <a href="#" class="icon--xs icon--white"><i
+                                            class="article-bookmark i-bookmark"></i></a>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <p class="article-content__title">A importância da literacia financeira na educação das
+                                    crianças
+                                    e jovens</p>
+                                <p class="article-content__author">Paulo Alcarva</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--PODCAST desktop-->
+            <div class="home-podcast col-12 col-t-6 offset-t-3 offset-d col-d-3 podcast-desktop">
+                <div class="podcast-card">
+                    <div class="podcast-card__header">
+                        <img class="podcast-card__header-thumbnail" src="/Assets/Capa Podcast (1).png"
+                            alt="podcast image">
+                    </div>
+
+                    <div class="podcast-card__tags">
+                        <h4 class="podcast-card__ep">#3.Episódio da semana</h4>
+                    </div>
+
+                    <div class="podcast-card__headline">
+                        <h3 class="podcast-card__headline-author">Ana Brandão,</h3>
+                        <h3 class="podcast-card__headline-title">Fala Sobrre Bullying na Infancia</h3>
+                        <p class="podcast-card__headline-date">12 junho ⋅ 45min</p>
+                    </div>
+
+                    <div class="podcast-card__content">
+                        <a class="btn-s btn-brand  podcast-card__content-btn" href="#"><i
+                                class="btn-i i-play podcast-card__icon"></i> Ouvir Podcast</a>
+                        <p class="podcast-card__content-snipet">A criatividade é uma competência fundamental para a o
+                            futuro da nossa sociedade. Mas será que estamos a desenvolver pessoas criativas que</p>
+                        <p class="podcast-card__content-more">Ler mais...</p>
+                    </div>
+
+                    <div class="podcast-card__footer">
+                        <div class="podcast-card__footer-container">
+                            <p class="podcast-card__footer-themes">Temas abordados:</p>
+                            <a class="tag--s tag--colorb home-podcast__orange">Saúde mental</a>
+                            <a class="tag--s tag--colorb home-podcast__pink">Outros</a>
+                        </div>
+                        <a class="icon icon--white podcast-card__footer-icon"><i class="i-share"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe-card col-12 col-d-3">
+                <div class="subscribe-card__img">
+                    <img class="subscribe-card__img-image" src="/Assets/world.png" alt="background picture">
+                </div>
+                <div class="subscribe-card__content">
+                    <h2>Torne-se Subscritor</h2>
+                    <p class="subscribe-card__content-p"><i class="i-stars"></i>Artigos exclusivos</p>
+                    <p class="subscribe-card__content-p"><i class="i-ticket"></i>Promoções e descontos</p>
+                    <p class="subscribe-card__content-p"><i class="i-book"></i>Newsletter à sua medida</p>
+                    <p class="subscribe-card__content-p"><i class="i-user"></i>Conselhos de especialistas</p>
+                    <a class="btn btn-light subscribe-card__content-btn col-12">Subscrever</a>
+                    <p class="subscribe-card__content-plus">saiba mais <i
+                            class="i-arrow-right subscribe-card__content-arrow"></i></p>
+                </div>
+            </div>
+            </div>
+
+            <section class="section-doctors gridrow">
+                <div class="articles-filters__filters col-12 col-t-10 offset-t-1 offset-d col-d-12">
+                    <h4 class="articles-filters__filters-title">A nossa equipa</h4>
+                    <div class="articles-filters__filters-icons">
+                        <a class="tag tag--primary articles-filters__filters-icons-1"><i class=" i-view"></i> Ver
+                            todos</a>
+                    </div>
+                </div>
+                <div class="col-6 col-t-3 offset-t-1 offset-d col-d-2">
+                    <div class="specialist-card specialist-card-top">
+                        <div class="specialist-card__left">
+                            <img class="specialist-card__thumbnail" src="/Assets/specialist.jpg"
+                                alt="specialist picture">
+                        </div>
+                        <div class="specialist-card__right">
+                            <h5 class="specialist-card__name">Vanessa Almeida</h5>
+                            <p class="specialist-card__prof specialist-card-top__p">Psicóloga</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-t-3 offset-t-1 offset-d col-d-2">
+                    <div class="specialist-card specialist-card-top">
+                        <div class="specialist-card__left">
+                            <img class="specialist-card__thumbnail" src="/Assets/specialist.jpg"
+                                alt="specialist picture">
+                        </div>
+                        <div class="specialist-card__right">
+                            <h5 class="specialist-card__name">Dr. António Melo</h5>
+                            <p class="specialist-card__prof specialist-card-top__p">Médico</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-t-3 offset-t-1 offset-d col-d-2">
+                    <div class="specialist-card specialist-card-top">
+                        <div class="specialist-card__left">
+                            <img class="specialist-card__thumbnail" src="/Assets/specialist.jpg"
+                                alt="specialist picture">
+                        </div>
+                        <div class="specialist-card__right">
+                            <h5 class="specialist-card__name">May Rodrigues Costa</h5>
+                            <p class="specialist-card__prof specialist-card-top__p">Psicólogo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-t-3 offset-t-1 offset-d col-d-2">
+                    <div class="specialist-card specialist-card-top">
+                        <div class="specialist-card__left">
+                            <img class="specialist-card__thumbnail" src="/Assets/specialist.jpg"
+                                alt="specialist picture">
+                        </div>
+                        <div class="specialist-card__right">
+                            <h5 class="specialist-card__name">Anabela Antunes</h5>
+                            <p class="specialist-card__prof specialist-card-top__p">Prof. Ed. Física</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-t-3 offset-t-1 offset-d col-d-2">
+                    <div class="specialist-card specialist-card-top">
+                        <div class="specialist-card__left">
+                            <img class="specialist-card__thumbnail" src="/Assets/specialist.jpg"
+                                alt="specialist picture">
+                        </div>
+                        <div class="specialist-card__right">
+                            <h5 class="specialist-card__name">Gisela Amado Silva</h5>
+                            <p class="specialist-card__prof specialist-card-top__p">Prof. História</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-t-3 col-d-2">
+                    <div class="specialist-card specialist-card-top">
+                        <div class="specialist-card__left">
+                            <img class="specialist-card__thumbnail" src="/Assets/specialist.jpg"
+                                alt="specialist picture">
+                        </div>
+                        <div class="specialist-card__right">
+                            <h5 class="specialist-card__name">Patricia Fernandes</h5>
+                            <p class="specialist-card__prof specialist-card-top__p">Psicóloga</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="section-doctors__dots col-12" href="#"><i class="i-dots-horizontal"></i></a>
+            </section>
+
+            <section class="gridrowfull">
+                <div class="inf-input-card inf-input-card-home">
+                    <div class="inf-input-card__top col-12 col-d-5">
+                        <img src="/Assets/help.png" alt="help">
+                    </div>
+                    <div class="inf-input-card__content inf-input-card-home__home gridrow">
+                        <h2>Estamos aqui para ajudar</h2>
+                        <select class="inf-input-card__input col-12 col-d-10" placeholder="Área do profissional">
+                            <option value="" disabled selected hidden>Área do profissional</option>
+                            <option value="psi">Psicologo</option>
+                            <option value="psi">Médico</option>
+                            <option value="psi">Prof. Ed. Física</option>
+                        </select>
+                        <select class="inf-input-card__input col-12 col-d-10" placeholder="Nome do profissional">
+                            <option value="" disabled selected hidden>Nome do profissional</option>
+                            <option value="psi">Psicologo</option>
+                            <option value="psi">Médico</option>
+                            <option value="psi">Prof. Ed. Física</option>
+                        </select>
+                        <input class="inf-input-card__input col-12 col-d-10" type="text" id="Name" placeholder="E-mail">
+                        <input class="inf-input-card__input col-12 col-d-10" type="text" id="Name"
+                            placeholder="Assunto">
+                        <input class="inf-input-card__input inf-input-card__mensagem col-12 col-d-10" type="text"
+                            id="Name" placeholder="Mensagem">
+                    </div>
+                </div>
+            </section>
+    </main>
+    <script src="/Js/nav.js"></script>
+</body>
+
+</html>

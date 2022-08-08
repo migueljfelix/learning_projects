@@ -1,0 +1,76 @@
+.podcast-main{
+    background-color: $lighterblue;
+    margin-top: 56px;
+    padding-bottom: 24px;
+}
+
+.podcast-page-header{
+    &__img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.podcast-page-body{
+    margin-top: -40px;
+    &__header{
+        background-color: $white;
+        border-radius: 16px;
+        margin-bottom: 40px;
+        & >h3{
+            @include semibold20;
+            text-align: center;
+            padding: 24px 24px 24px 24px;
+        }
+    }
+}
+.host-title{
+@include semibold20;
+color:$primary;
+margin-bottom: 16px;
+}
+
+.podcast-testemonials{
+    &__header{
+        @include semibold20;
+        color: $primary;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+    &__container{
+        background-color: $lighterblue;
+        border-radius: 16px;
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    &__container-img{
+        width: 25px;
+        height: auto;
+        margin-bottom: 12px;
+    }
+    &__container-quote{
+        @include light18;
+        margin-bottom:4px;
+    }
+    &__container-author{
+        @include regular12;
+        color: $primary;
+
+    }
+}
+
+.links{
+    @include semibold20;
+    color: $primary;
+    margin-bottom: 16px;
+}
+.links-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 26px;
+    &__img{
+        height: 70px;
+        width: 70px;
+    }
+}

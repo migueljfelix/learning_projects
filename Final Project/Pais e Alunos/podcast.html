@@ -1,0 +1,274 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/sass/Main.css">
+      <link rel="stylesheet" href="/PaisAlunos-v1.0/style.css">
+      <title>Pais & Alunos</title>
+  </head>
+
+  <body>
+      <!--------------------- MENU ----------------------->
+      <header class="gridrowfull">
+          <nav class=" gridrow nav">
+              <!--  navigation on left side  -->
+              <section class="col-6 col-t-6 col-d-3">
+                  <div class="nav_left">
+                      <a href="/index.html"> <img class="nav_logo" src="Assets/logo_primary.svg" alt="pais e alunos">
+                      </a>
+                  </div>
+              </section>
+              <!--  navigation on right side  -->
+              <section class="col-6 col-t-6 nav_right">
+                  <div class="nav_right">
+                      <i class="nav_icon i_space i-search"></i>
+                      <a href="javascript:void(0);" class="hamburguer-btn" onclick="myFunction()"> <i id="hamburger"
+                              class="nav_icon i-menu"></i></a>
+                  </div>
+              </section>
+              <!-- desktop navigation-->
+              <section class="col-9 col-t-9 col-d-9 desktop-nav">
+                  <div class="desktop-nav__left">
+                      <a href="/podcast.html" class="desktop-nav__link">Podcast</a>
+                      <a href="/articles.html" class="desktop-nav__link">Artigos</a>
+                      <a href="#" class="desktop-nav__link ">Contactar um especialista</a>
+                      <a href="#" class="btn-s btn-border-primary desktop-navbtn">Subscrever newsletter</a>
+                  </div>
+                  <div class="desktop-nav__right">
+                      <a href="#"> <i class="i-search desktop-nav__icon1"></i></a>
+                      <a href="#"> <i class="i-user desktop-nav__icon2"></i></a>
+                  </div>
+              </section>
+          </nav>
+      </header>
+      <!--Dropdown -->
+      <section id="hamburguer-dropdown" class="menu-dropdown gridrow">
+          <div class="menu-dropdown__header col-12">
+              <a href="javascript:void(0);" class="menu-dropdown__close-btn icon icon--primary" onclick="myFunction()">
+                  <i id="hamburger" class="menu-dropdown__icon i-remove"></i></a>
+          </div>
+          <div class="user-card col-12">
+              <div class="user-card__left">
+                  <img class="user-card__thumbnail" src="/Assets/specialist.jpg" alt="specialist picture">
+              </div>
+              <div class="user-card__right">
+                  <h5 class="user-card__name">Amélia Rodrigues</h5>
+                  <p class="user-card__email">ameliarodrigues_88@gmail.com</p>
+              </div>
+          </div>
+          <div class="menu-dropdown__logout">
+              <a class="btn btn-light menu-dropdown__logout-btn">Logout</a></div>
+          <div class="menu-dropdown__container col-12">
+              <a href="/index.html" class="menu-dropdown__link "><i
+                      class="i-home i-announcement menu-dropdown__link-icon "></i>Homepage</a>
+              <a href="/podcast.html" class="menu-dropdown__link menu-dropdown__link-active"><i
+                      class="i-announcement menu-dropdown__link-icon menu-dropdown__link-icon-active"></i>Podcast</a>
+              <a href="/articles.html" class="menu-dropdown__link "><i
+                      class="i-book menu-dropdown__link-icon"></i>Artigos</a>
+              <a href="/articles.html" class="menu-dropdown__link "><i
+                      class="i-message menu-dropdown__link-icon"></i>Contactar um especialista</a>
+          </div>
+      </section>
+      <!---------------- MENU END ---------------->
+      <main class="podcast-main">
+          <section class="podcast-page-header gridrowfull">
+              <img class="podcast-page-header__img" src="/Assets/podcast image.png" alt="podcast background">
+          </section>
+          <section class="podcast-page-body gridrow">
+                <div class="col-12">
+              <div class="podcast-page-body__header">
+                  <h3>O novo podcast da Pais&Alunos sobre temas de educação para além da escola.</h3>
+              </div>
+              </div>
+              <div class="filters-container col-12">
+                  <div class="filters-container__filters">
+                      <h4 class="filters-container__filters-title">Todos os artigos (48)</h4>
+                      <div class="filters-container__filters-icons">
+                          <a class="tag tag--primary filters-container__filters-icons-1"><i class=" i-selector"></i></a>
+                          <a class="tag tag--primary filters-container__filters-icons-2"><i class=" i-filters"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <!--Podcast episodes-->
+              <!--ep1-->
+              <secton class="col-12">
+                  <div class="episode-card">
+                      <div class="episode-card__left">
+                          <img class="episode-card__thumbnail" src="/Assets/podcast thumbnail.png"
+                              alt="Episode thumbnail">
+                      </div>
+
+                      <div class="episode-card__right">
+                          <p class="episode-card__title"><span class="episode-card__episoden">Episódio 1 -</span> A
+                              criatividade começa em si</p>
+                          <a class="tag tag--yellow episode-card__tag">Cidadania</a>
+                          <div class="episode-card__footer">
+                              <span class="episode-card__footerspan">15 agosto &nbsp; &nbsp; 30min </span>
+                              <a class="icon--s icon--primary episode-card__btn"><i
+                                      class="i-play episode-card__icon"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <!--ep2-->
+                  <div class="episode-card">
+                      <div class="episode-card__left">
+                          <img class="episode-card__thumbnail" src="/Assets/podcast thumbnail.png"
+                              alt="Episode thumbnail">
+                      </div>
+                      <div class="episode-card__right">
+                          <p class="episode-card__title"><span class="episode-card__episoden">Episódio 2 -</span> Como
+                              gerir a ansiedade de regresso às aulas</p>
+                          <a class="tag tag--orange episode-card__tag">Saude Mental</a>
+                          <div class="episode-card__footer">
+                              <span class="episode-card__footerspan">29 Agosto &nbsp; &nbsp; 30min </span>
+                              <a class="icon--s icon--primary episode-card__btn"><i
+                                      class="i-play episode-card__icon"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- ep3-->
+                  <div class="episode-card">
+                      <div class="episode-card__left">
+                          <img class="episode-card__thumbnail" src="/Assets/podcast thumbnail.png"
+                              alt="Episode thumbnail">
+                      </div>
+                      <div class="episode-card__right">
+                          <p class="episode-card__title"><span class="episode-card__episoden">Episódio 3 -</span> Ana
+                              Rodrigues da costa fala sobre bullying na infância</p>
+                          <a class="tag tag--orange episode-card__tag">Saude Mental</a>
+                          <div class="episode-card__footer">
+                              <span class="episode-card__footerspan">12 Setembro &nbsp; &nbsp; 30min </span>
+                              <a class="icon--s icon--primary episode-card__btn"><i
+                                      class="i-play episode-card__icon"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- ep4-->
+                  <div class="episode-card">
+                      <div class="episode-card__left">
+                          <img class="episode-card__thumbnail" src="/Assets/podcast thumbnail.png"
+                              alt="Episode thumbnail">
+                      </div>
+                      <div class="episode-card__right">
+                          <p class="episode-card__title"><span class="episode-card__episoden">Episódio 4 -</span> Paulo
+                              alcarva fala sobre literacia financeira na educação</p>
+                          <a class="tag tag--purple episode-card__tag">Literacia Financeira</a>
+                          <div class="episode-card__footer">
+                              <span class="episode-card__footerspan">26 Setembro &nbsp; &nbsp; 30min </span>
+                              <a class="icon--s icon--primary episode-card__btn"><i
+                                      class="i-play episode-card__icon"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- ep5-->
+                  <div class="episode-card">
+                      <div class="episode-card__left">
+                          <img class="episode-card__thumbnail" src="/Assets/podcast thumbnail.png"
+                              alt="Episode thumbnail">
+                      </div>
+                      <div class="episode-card__right">
+                          <p class="episode-card__title"><span class="episode-card__episoden">Episódio 5 -</span> Joana
+                              Pereira fala de crianças praticarem desporto</p>
+                          <a class="tag tag--yellow episode-card__tag">Desporto</a>
+                          <div class="episode-card__footer">
+                              <span class="episode-card__footerspan">10 Outubro &nbsp; &nbsp; 30min </span>
+                              <a class="icon--s icon--primary episode-card__btn"><i
+                                      class="i-play episode-card__icon"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- ep6-->
+                  <div class="episode-card">
+                      <div class="episode-card__left">
+                          <img class="episode-card__thumbnail" src="/Assets/podcast thumbnail.png"
+                              alt="Episode thumbnail">
+                      </div>
+                      <div class="episode-card__right">
+                          <p class="episode-card__title"><span class="episode-card__episoden">Episódio 6 -</span>
+                              Conheça os sinais da depressão na adolescência</p>
+                          <a class="tag tag--orange episode-card__tag">Saude Mental</a>
+                          <div class="episode-card__footer">
+                              <span class="episode-card__footerspan">24 Outubro &nbsp; &nbsp; 30min </span>
+                              <a class="icon--s icon--primary episode-card__btn"><i
+                                      class="i-play episode-card__icon"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </secton>
+              <div class="col-12">
+                <div class="page-counter-card">
+                    <i class="icon--page icon--white i-chevron-left"></i>
+                    <span class="page-counter-i page-counter-i-active">1</span>
+                    <span class="page-counter-i">2</span>
+                    <span class="page-counter-i">...</span>
+                    <span class="page-counter-i">9</span>
+                    <span class="page-counter-i">10</span>
+                    <i class="i-chevron-right icon--page icon--white"></i>
+                </div>
+              </div>
+          </section>
+      </main>
+      <main class="gridrow">
+        <!--Host Card-->
+        <h2 class="col-12 host-title">A nossa host</h2>
+        <div class="col-12">
+            <div class="host-card">
+                <div class="host-card__back">
+                    <p class="host-card__p">A nossa Host é licenciada em Jornalismo pela Escola Superior de 
+                        Comunicação Social de Lisboa. Colaborou com o Diário de Notícias 
+                        e o Jornal de Notícias e trabalhou em vários jornais regionais. </p>  
+                </div>
+                <div class="host-card__absolute">
+                    <img class="host-card__thumbnail" src="Assets/host.png" alt="Episode thumbnail">
+                    <div class="host-card__right">
+                        <h5 class="host-card__name">Catarina Raminhos</h5>
+                        <h5 class="host-card__prof">Jornalista</h5>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <section class="podcast-testemonials col-12">
+            <h2 class="podcast-testemonials__header">O Podcast que...</h2>
+            <div class="podcast-testemonials__container">
+                <img class="podcast-testemonials__container-img" src="Assets/aspas_blue.svg" alt="porto editora logo">
+                <p class="podcast-testemonials__container-quote">Irei recomendar-vos aos meus colegas</p>
+                <p class="podcast-testemonials__container-author">Salomé Rodrigues . Episódio 2</p>
+            </div>
+            <div class="podcast-testemonials__container">
+                <img class="podcast-testemonials__container-img"  src="Assets/aspas_blue.svg" alt="porto editora logo">
+                <p class="podcast-testemonials__container-quote">Não importa onde se vá, Pais&Alunos é a coisa mais fixe, 
+                    a maioria das coisas que acontecem por aí!  
+                    É simplesmente espantoso.</p>
+                <p class="podcast-testemonials__container-author">Pedro Guerra . Episódio 2 </p>
+            </div>
+            <h2 class="links">Também disponível em</h2>
+            <div class="links-container">
+                <img class="links-container__img pod-1" src="/Assets/podcast-1.png" alt="podcast logo">
+                <img class="links-container__img" src="/Assets/podcast-2.png" alt="podcast logo">
+                <img class="links-container__img" src="/Assets/podcast-3.png" alt="podcast logo">
+                <img class="links-container__img" src="/Assets/podcast-4.png" alt="podcast logo">
+            </div>
+          </section>
+      </main>
+      <div class="subscribe-card gridrowfull">
+        <div class="subscribe-card__img">
+            <img class="subscribe-card__img-image" src="/Assets/world.png" alt="background picture">
+        </div>
+        <div class="subscribe-card__content">
+            <h2>Torne-se Subscritor</h2>
+            <p class="subscribe-card__content-p"><i class="i-stars"></i>Artigos exclusivos</p>
+            <p class="subscribe-card__content-p"><i class="i-ticket"></i>Promoções e descontos</p>
+            <p class="subscribe-card__content-p"><i class="i-book"></i>Newsletter à sua medida</p>
+            <p class="subscribe-card__content-p"><i class="i-user"></i>Conselhos de especialistas</p>
+            <a class="btn btn-light subscribe-card__content-btn col-12">Subscrever</a>
+            <p class="subscribe-card__content-plus">saiba mais <i
+                    class="i-arrow-right subscribe-card__content-arrow"></i></p>
+        </div>
+    </div>
+      <script src="/Js/nav.js"></script>
+  </body>
+
+  </html>

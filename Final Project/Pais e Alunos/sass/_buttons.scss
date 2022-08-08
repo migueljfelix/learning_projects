@@ -1,0 +1,339 @@
+/*--------------------- BUTONS ------------------------*/
+
+
+//btn sizes are decided in their card
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    @include semibold16;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transition: all 0.1s ease;
+}
+
+.btn-s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    @include semibold14;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-xs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    @include semibold14;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+//include btn-i when with icon white text 
+//PUT THIS ON THE ICON CLASS
+.btn-i {
+    color: $white;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+//include btn-i when with icon blue text
+.btn-i-blue {
+    color: $primary;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+//btn with border white and background
+.btn-border-white {
+    color: white;
+    border: 2px solid $white;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.16);
+    }
+
+    &:active {
+        background: rgba(0, 0, 0, 0.32);
+    }
+}
+
+//btn with primary border and background
+.btn-border-primary {
+    color: $primary;
+    border: 2px solid $primary;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.08);
+    }
+
+    &:active {
+        background: rgba(0, 0, 0, 0.16);
+    }
+}
+
+//btn dark with white font
+.btn-dark {
+    color: $white;
+    background-color: $greydarker;
+}
+
+//btn brand
+.btn-brand {
+    color: $white;
+    background-color: $primary;
+    border-radius: 100px;
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)), $primary;
+    }
+
+    &:active {
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), $primary;
+    }
+}
+
+
+//btn white font to change later
+.btn-color {
+    color: $white;
+}
+
+//btn white with dark font
+.btn-light {
+    color: $primary;
+    background-color: $white;
+    border-radius: 100px;
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), $white;
+    }
+
+    &:active {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)), $white;
+    }
+}
+
+
+/*---------- ICON BUTTONS ----------------------*/
+/* ____________  icons may need a bit of padding left_________*/
+//icon variations - medium and small
+//medium
+.icon {
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//small
+.icon--s {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon--xs {
+    font-size: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1px;
+}
+.icon--page {
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+// Icon variations
+.icon--light {
+    color: $greydarker;
+    background-color: $white;
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), $white;
+    }
+
+    &:active {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)), $white;
+    }
+}
+
+.icon--dark {
+    color: $white;
+    background-color: $greydarker;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.08);
+    }
+
+    &:active {
+        background: rgba(0, 0, 0, 0.16);
+    }
+}
+
+.icon--primary {
+    color: $white;
+    background-color: $primary;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.08), $white;
+    }
+
+    &:active {
+        background: rgba(0, 0, 0, 0.16), $white;
+    }
+}
+
+.icon--white {
+    color: $primary;
+    background-color: $white;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.08);
+    }
+
+    &:active {
+        background: rgba(0, 0, 0, 0.16);
+    }
+}
+
+.icon--border {
+    color: $greydarker;
+    border: 2px solid $greydarker;
+
+    &:hover {
+        background-color: $greydarker;
+        color: $greydarker;
+    }
+}
+
+.icon--border-primary {
+    color: $primary;
+    border: 2px solid $primary;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.08);
+    }
+
+    &:active {
+        background: rgba(0, 0, 0, 0.16);
+    }
+}
+
+
+
+
+/*---------------- TAGS ---------------------*/
+// Use tags as <a> tag  
+
+//tag variations --- medium and small ---
+.tag {
+    @include semibold12;
+    text-align: center;
+    padding: 4px 8px 4px 8px;
+    height: 28px;
+    border-radius: 4px;
+}
+
+.tag--s {
+    @include semibold12;
+    text-align: center;
+    padding: 2px 4px 2px 4px;
+    border-radius: 4px;
+}
+
+//white background 
+.tag--light {
+    background-color: $white;
+    color: $greydarker;
+}
+
+// dark background
+.tag--dark {
+    color: $white;
+    background-color: $greydarker;
+}
+
+// primary - white background
+.tag--primary {
+    color: $primary;
+    background-color: $white;
+}
+
+//green colored
+.tag--color {
+    color: $white;
+}
+
+//green colored
+.tag--colorb {
+    color: $greydarker;
+}
+
+.tag--pink {
+    color: $greydarker;
+    background-color: $pink;
+}
+
+.tag--orange {
+    color: $greydarker;
+    background-color: $orange;
+}
+
+.tag--green {
+    color: $greydarker;
+    background-color: $green;
+}
+
+.tag--yellow {
+    color: $greydarker;
+    background-color: $yellow;
+}
+
+.tag--purple {
+    color: $greydarker;
+    background-color: $purple;
+}
+
+/*----------PAGE COUNTER------------*/
+
+.page-counter-i {
+    @include semibold16;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:$greydarker;
+    background-color: $white;
+}
+.page-counter-i-active{
+    @include shadowb2;
+    color: $white;
+    background-color: $primary;
+}

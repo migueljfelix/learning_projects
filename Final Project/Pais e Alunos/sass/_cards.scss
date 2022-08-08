@@ -1,0 +1,564 @@
+/*  FOR ARTICLES*/
+.card-article{
+    @include shadowb2;
+    min-width: 131px;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEEEE;
+    margin-bottom: 16px;//so para testar
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+//for article with image
+.article-header-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-right:16px;
+    padding-bottom:86px;
+    border-radius: 8px 8px 0px 0px;
+    position: relative;
+    overflow: hidden;
+    &__img{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: 150px;
+    }
+    &__tags{
+        z-index: 10;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+
+// for article with no image
+.article-header{
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;    
+    padding-top: 16px;
+    padding-left:16px;
+    padding-right:16px;
+}
+
+// Article content
+.article-content{
+    @include shadow2;
+    padding: 16px;
+    background-color: $white;
+    border-radius: 0px 0px 16px 16px;
+    &__title{
+        @include semibold16;
+        margin-bottom: 4px
+    }
+    &__author{
+        @include regular14;
+        color: $greymedium;
+    }
+}
+
+/*--------------download card ------------------*/
+
+.download-card{
+   background-color: $greylighter; 
+   border-radius: 8px;
+   padding-top: 24px;
+   padding-bottom: 24px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    &__tag{
+            text-transform: uppercase;
+            width: auto;
+            margin-bottom: 8px;
+    }
+    &__title{
+        margin-bottom: 24px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    &__btn{
+        padding: 10px 92px 10px 92px;
+    }
+    &__icon{
+        font-size: 14px;
+        margin-right: 8px;
+    }
+}
+
+/*-----------  CARD EPISODIO ----------------*/
+
+.episode-card{
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    background-color: $white;
+    border-radius:15px;
+    margin-bottom: 16px;
+
+    &__right{
+        margin-left: 16px;
+    }
+    &__title{
+        @include regular14;
+        margin-bottom: 8px;
+        height: 60px;
+    }
+    &__episoden{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &__footer{
+        margin-top: 3px ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__footerspan{
+        @include semibold12;
+        color: $primary;
+    }
+    &__btn{
+        cursor: pointer;
+        height: 28px;
+        width: 28px;
+    }
+    &__icon{
+        font-size: 12px;
+        color: $white;
+        padding-left: 2px;
+    }
+}
+
+
+/*-----------  CARD HOST ----------------*/
+
+.host-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &__back{        //back that gives the card black
+        margin-top: 40px;
+        position: relative;
+        background-color: $lighterblue;
+        padding: 112px 24px 24px 24px;
+        border-radius: 8px;
+    }
+    &__p{   //paragraph inside host
+        @include regular14;
+        color: $greydarker;
+    }
+    &__absolute{    //this part is absolute to stay on top 
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        align-items: flex-end;
+        padding-left: 24px;
+        padding-right: 24px;
+        top: 24px;
+    }
+    &__thumbnail{
+        height: auto;
+        width: auto;
+    }
+    &__right{
+        padding-left: 16px;
+    }
+    &__name{
+        @include semibold20;
+        color: $primary;
+    }
+    &__prof{
+        @include semibold12;
+        color: $greymedium;
+    }
+}
+
+
+/*---------------- CARD SPECIALIST ---------------*/
+
+//normal specialist card
+.specialist-card{ 
+    display: flex;
+    align-items: center;
+    @include shadowb2;
+    background-color: $white;
+    padding:16px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    &__left{
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        margin-right: 16px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    &__thumbnail{
+        margin-top: 25px;
+        height: auto;
+        width: 100%;
+    }
+    &__name{
+        @include semibold16;
+        margin-bottom:4px;
+
+    }
+    &__prof{
+        @include semibold12;
+    }
+}
+.specialist-card-top{
+    flex-direction: column;
+    text-align: center;
+    &__p{
+        @include regular12;
+    }
+}
+
+//big specialist card
+.specialist-card-big{ 
+    display: flex;
+    align-items: center;
+    @include shadow1;
+    padding-top:16px;
+    padding-bottom:16px;
+    padding-left: 16px;
+    border-radius: 16px;
+    &__left{
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        margin-right: 16px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    &__thumbnail{
+        margin-top: 25px;
+        height: auto;
+        width: 100%;
+    }
+    &__name{
+        @include semibold24;
+        margin-bottom:4px;
+    }
+    &__prof{
+        @include regular18;
+    }
+}
+
+
+
+//USER card
+.user-card{ 
+    display: flex;
+    align-items: center;
+    padding-bottom:16px;
+    padding-left: 16px;
+    background-color: $lighterblue;
+    &__left{
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        margin-right: 16px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    &__thumbnail{
+        margin-top: 25px;
+        height: auto;
+        width: 100%;
+    }
+    &__name{
+        @include semibold16;
+        color: $primary;
+        margin-bottom:4px;
+    }
+    &__email{
+        @include regular12;
+        color: $greydarker;
+    }
+}
+
+
+
+/*---------------- CATEGORY ---------------*/
+.categories{
+    text-align: center;
+    overflow: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $primary;
+    transition: all 0.3s ease;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+    &__link{
+        flex: none;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        color: $greydarker;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    &__activated{
+        @include semibold16;
+        border-bottom: 2px solid $primary;
+    }
+    &__link:hover{
+        @include semibold16;
+        border-bottom: 2px solid $primary;
+    }
+}
+
+
+
+
+/*---------------- Podcast card ---------------*/
+
+.podcast-card{
+    @include shadowb2;
+    background-color: $white;
+    flex-direction: column;
+    padding: 28px 24px 72px 24px;
+    border-radius: 16px;
+    &__header{
+        margin-left: auto;
+        margin-right: auto;
+        @include shadow4;
+        width: 100%;
+        height: 182px;
+        width: 182px;
+        overflow: hidden;
+        border-radius: 16px;
+        margin-bottom: 24px;
+        background-color: $greydarker;
+    }
+    &__header-thumbnail{  //a editar em cada caso//
+        width: 100%;
+        height: auto;
+        margin-top: -5px; //para puxar imagem para cima
+    }
+    &__tags{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    &__ep{
+        @include semibold16;
+        margin-right: 12px;
+    }
+    &__new{
+        background-color: $alert;
+    }
+    &__headline-author{
+        @include semibold20;
+    }
+    &__headline-title{
+        @include semibold20;
+        margin-bottom: 8px;
+    }
+    &__headline-date{
+        @include regular14;
+        color: $greymedium;
+        margin-bottom: 32px;
+    }
+    &__content{
+        margin-bottom: 16px;
+    }
+        &__content-btn{
+            margin-bottom: 32px;
+        }
+        &__content-snipet{
+            @include regular14;
+            margin-bottom: 4px;
+        }
+        &__content-more{
+            cursor: pointer;
+            color: $primary;
+            @include semibold14;
+        }
+    &__footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__footer-themes{
+        @include regular12;
+        margin-bottom: 8px;
+    }
+    &__footer-icon{
+        @include shadow2;
+        margin-left: -5px;
+        
+    }
+} 
+
+
+/*--------------- subscribe card -------------------------*/
+.subscribe-card{
+    background-color: $blue2;
+    overflow: hidden;
+    position: relative;
+    padding: 56px 32px 56px 32px;
+    border-radius: 16px;
+
+    &__img{
+        width: 100%;
+        overflow: hidden;
+    }
+    &__img-image{
+        position: absolute;
+        width: 75%;
+        height: auto;
+        top: -105px;
+        right: -79px;
+    }
+    &__content{
+        z-index: 33;
+        & > h2{
+            @include semibold40;
+            color: $white;
+            margin-bottom: 20px;
+        }
+            
+    }
+    &__content-p{
+        @include semibold18;
+            color: $white;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            
+            & > i{
+                color: $white ;
+                margin-right: 16px;
+
+            }
+        }
+
+    &__content-btn{
+        margin-top: 38px;
+        margin-bottom: 24px;
+    }
+    &__content-plus{
+        @include semibold12;
+        color: $white;
+        text-align: center;
+    }
+    &__content-arrow{
+        margin-left: 8px;
+    }
+    
+}
+
+
+
+/*----------------inf-input-card------------------*/
+
+.inf-input-card{
+    background-color: $white;
+    width: 100%;
+    &__top {
+        margin-bottom: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    &__content{
+        &>h2{
+            @include semibold32;
+            color: $primary;
+            margin-bottom: 24px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    }
+    &__input{
+        @include regular14;
+        color: $greydarker;
+        background-color: transparent;
+        border: 1px solid $greymedium;
+        border-radius: 4px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-bottom: 16px;
+        padding-left: 8px;
+        &::placeholder{
+            color: $greydarker;
+            padding-left: 8px;
+        }
+    }
+    &__area{
+        color: $greydarker;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 1px solid $greymedium;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    &__mensagem{
+        color: $greydarker;
+        padding-bottom: 124px;
+    }
+    &__area-icon{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+/*----------Page Counter---------*/
+
+.page-counter-card{
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 24px;
+    justify-content: space-around;
+}
+
+
+
+/////////////////////////////////////////
+/// 
+/// 
+/// 
+.teste{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    &__2{
+        background-color: aqua;
+    }
+    &__3{
+        background-color: red;
+    }
+}
