@@ -8,11 +8,11 @@ function Intro() {
     <Hero>
       <Logo>
         <img src={logo} alt="" />
-        <Title_div>
+        <TitleWrapper>
         <h1>FIFA World Cup</h1>
         <h2>Qatar 2022</h2>
         <Countdown/>
-        </Title_div>
+        </TitleWrapper>
       </Logo>
       
     </Hero>
@@ -70,7 +70,7 @@ const Logo = styled.div`
 
 `;
 
-const Title_div = styled.div`
+const TitleWrapper = styled.div`
 display: flex;
 flex-direction: column;
 
